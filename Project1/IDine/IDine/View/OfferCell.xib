@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OfferCell" id="gTV-IL-0wX" customClass="OfferCell" customModule="IDine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="152"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNp-qs-oim">
+                        <rect key="frame" x="0.0" y="0.0" width="357" height="152"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB7-dl-G2t">
+                                <rect key="frame" x="18" y="8" width="147" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="3vg-ib-9GY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ie1-7X-4pZ">
+                                <rect key="frame" x="16" y="38" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="uER-Dx-4gk"/>
+                                    <constraint firstAttribute="width" constant="90" id="xuM-cW-enB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coral" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoa-gr-Et4">
+                                <rect key="frame" x="116" y="38" width="190" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="2ll-Qk-BoX"/>
+                                    <constraint firstAttribute="height" constant="28" id="ht5-FG-yCI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INI-i4-IaW">
+                                <rect key="frame" x="116" y="67" width="196" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7qh-j5-Su8"/>
+                                    <constraint firstAttribute="width" constant="196" id="ivL-xS-73S"/>
+                                </constraints>
+                                <string key="text">20% off on Fodd Bill
+Valid only on Inhouse dining</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNo-R2-nfD">
+                                <rect key="frame" x="5" y="151" width="347" height="1"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.47450980390000003" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hwC-eg-Vfz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vNo-R2-nfD" secondAttribute="trailing" constant="5" id="AN0-iY-USm"/>
+                            <constraint firstAttribute="bottom" secondItem="vNo-R2-nfD" secondAttribute="bottom" id="E9e-jP-98P"/>
+                            <constraint firstItem="vNo-R2-nfD" firstAttribute="leading" secondItem="eNp-qs-oim" secondAttribute="leading" constant="5" id="F6S-3a-qVv"/>
+                            <constraint firstItem="Yoa-gr-Et4" firstAttribute="leading" secondItem="Ie1-7X-4pZ" secondAttribute="trailing" constant="10" id="ITP-2y-AQs"/>
+                            <constraint firstAttribute="trailing" secondItem="WB7-dl-G2t" secondAttribute="trailing" constant="192" id="PUb-yh-0eU"/>
+                            <constraint firstItem="WB7-dl-G2t" firstAttribute="leading" secondItem="eNp-qs-oim" secondAttribute="leading" constant="18" id="Z3u-3k-jgQ"/>
+                            <constraint firstItem="WB7-dl-G2t" firstAttribute="top" secondItem="eNp-qs-oim" secondAttribute="top" constant="8" id="ded-a3-Bdg"/>
+                            <constraint firstItem="Ie1-7X-4pZ" firstAttribute="leading" secondItem="eNp-qs-oim" secondAttribute="leading" constant="16" id="edo-NF-So4"/>
+                            <constraint firstItem="Yoa-gr-Et4" firstAttribute="top" secondItem="WB7-dl-G2t" secondAttribute="bottom" constant="10" id="gK6-t2-fL8"/>
+                            <constraint firstItem="INI-i4-IaW" firstAttribute="leading" secondItem="Ie1-7X-4pZ" secondAttribute="trailing" constant="10" id="mAi-IL-PgO"/>
+                            <constraint firstItem="Ie1-7X-4pZ" firstAttribute="top" secondItem="WB7-dl-G2t" secondAttribute="bottom" constant="10" id="ost-Kd-1bo"/>
+                            <constraint firstItem="INI-i4-IaW" firstAttribute="top" secondItem="Yoa-gr-Et4" secondAttribute="bottom" constant="1" id="rUD-6g-tHG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eNp-qs-oim" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9d8-sC-uEU"/>
+                <constraint firstItem="eNp-qs-oim" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bh8-Ow-WWg"/>
+                <constraint firstAttribute="bottom" secondItem="eNp-qs-oim" secondAttribute="bottom" id="DUj-5O-Zap"/>
+                <constraint firstAttribute="trailing" secondItem="eNp-qs-oim" secondAttribute="trailing" id="eqa-Qe-4d8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="357" height="152"/>
+            <connections>
+                <outlet property="imgView" destination="Ie1-7X-4pZ" id="JcX-s7-0ST"/>
+                <outlet property="lblOffer" destination="WB7-dl-G2t" id="kNd-M4-ZCX"/>
+                <outlet property="lblOfferDescription" destination="INI-i4-IaW" id="lp5-pM-EUy"/>
+                <outlet property="lblResturant" destination="Yoa-gr-Et4" id="hyg-gE-dcW"/>
+            </connections>
+            <point key="canvasLocation" x="-671" y="33"/>
+        </collectionViewCell>
+    </objects>
+</document>

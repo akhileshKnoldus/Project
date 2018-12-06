@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Resturant" rowHeight="201" id="KGk-i7-Jjw" customClass="Resturant" customModule="IDine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="145.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4kv-PH-ayP">
+                        <rect key="frame" x="0.0" y="0.0" width="386" height="146"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images-3" translatesAutoresizingMaskIntoConstraints="NO" id="dYW-MR-pJE">
+                                <rect key="frame" x="10" y="10" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="fPu-MB-e8l"/>
+                                    <constraint firstAttribute="height" constant="90" id="h0s-W5-aSm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paloma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFM-8l-0uu">
+                                <rect key="frame" x="110" y="10" width="231" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="ikw-BG-fsD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e1-v6-fJd">
+                                <rect key="frame" x="110" y="53" width="232" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="QvV-ng-6Ap"/>
+                                </constraints>
+                                <string key="text">20% off on Fodd Bill
+Valid only on Inhouse dining</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9k-MA-q0I">
+                                <rect key="frame" x="353" y="76" width="28" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Uk2-Uq-4ue"/>
+                                    <constraint firstAttribute="width" constant="28" id="gb2-ba-XTe"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="keyboard-right-arrow-button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dYW-MR-pJE" firstAttribute="leading" secondItem="4kv-PH-ayP" secondAttribute="leading" constant="10" id="2UY-b7-snb"/>
+                            <constraint firstAttribute="bottom" secondItem="dYW-MR-pJE" secondAttribute="bottom" constant="46" id="2xq-zE-An7"/>
+                            <constraint firstAttribute="bottom" secondItem="y9k-MA-q0I" secondAttribute="bottom" constant="46" id="7wl-rv-aHW"/>
+                            <constraint firstItem="4e1-v6-fJd" firstAttribute="top" secondItem="qFM-8l-0uu" secondAttribute="bottom" constant="15" id="Dne-Iw-cgP"/>
+                            <constraint firstItem="qFM-8l-0uu" firstAttribute="top" secondItem="4kv-PH-ayP" secondAttribute="top" constant="10" id="NSg-M8-OYa"/>
+                            <constraint firstAttribute="trailing" secondItem="y9k-MA-q0I" secondAttribute="trailing" constant="5" id="Uhd-Bi-EPV"/>
+                            <constraint firstItem="4e1-v6-fJd" firstAttribute="leading" secondItem="dYW-MR-pJE" secondAttribute="trailing" constant="10" id="WLO-ft-gqU"/>
+                            <constraint firstItem="qFM-8l-0uu" firstAttribute="leading" secondItem="dYW-MR-pJE" secondAttribute="trailing" constant="10" id="eMK-6m-E1K"/>
+                            <constraint firstItem="y9k-MA-q0I" firstAttribute="leading" secondItem="4e1-v6-fJd" secondAttribute="trailing" constant="11" id="lqb-BS-59K"/>
+                            <constraint firstItem="dYW-MR-pJE" firstAttribute="top" secondItem="4kv-PH-ayP" secondAttribute="top" constant="10" id="tAw-Rh-hsm"/>
+                            <constraint firstAttribute="trailing" secondItem="qFM-8l-0uu" secondAttribute="trailing" constant="45" id="tC9-fn-nRR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4kv-PH-ayP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6eg-1d-bva"/>
+                    <constraint firstItem="4kv-PH-ayP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="98n-dC-j9h"/>
+                    <constraint firstAttribute="trailing" secondItem="4kv-PH-ayP" secondAttribute="trailing" id="ZO4-cF-IdU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgResutrantName" destination="dYW-MR-pJE" id="R7Z-lG-CdC"/>
+                <outlet property="lblResturantName" destination="qFM-8l-0uu" id="lnb-o5-BGw"/>
+                <outlet property="lblResturantOffer" destination="4e1-v6-fJd" id="Ck3-ff-ZRX"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="92"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="images-3" width="275" height="183"/>
+        <image name="keyboard-right-arrow-button" width="24" height="24"/>
+    </resources>
+</document>

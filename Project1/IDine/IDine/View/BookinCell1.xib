@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="BookingCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookingCell" rowHeight="133" id="KGk-i7-Jjw" customClass="BookingCell" customModule="IDine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="133"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="132.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxD-Y2-4dh" userLabel="BookingView">
+                        <rect key="frame" x="0.0" y="0.0" width="392" height="110"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="resutrant" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-ei-XZT">
+                                <rect key="frame" x="10" y="10" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="5Rb-h7-486"/>
+                                    <constraint firstAttribute="width" constant="90" id="bdG-UJ-NOm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paloma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="725-5s-wtJ">
+                                <rect key="frame" x="110" y="10" width="59.5" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="MBu-KQ-lPw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oHB-uB-W5G">
+                                <rect key="frame" x="110" y="35" width="116" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ibc-l2-SXs"/>
+                                </constraints>
+                                <string key="text">29 Aug 2018 at 20:00
+04 PAX   -   02 CHILD </string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOh-8F-wRn">
+                                <rect key="frame" x="251" y="70" width="121" height="30"/>
+                                <color key="backgroundColor" red="0.53725490196078429" green="0.29411764705882354" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gsf-Sk-RQd"/>
+                                </constraints>
+                                <state key="normal" title="GENERATE CODE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedGenerateCode:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="t4f-g5-blT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j7m-54-Jr6">
+                                <rect key="frame" x="101" y="70" width="135" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ocr-fq-VcV"/>
+                                </constraints>
+                                <state key="normal" title="EDIT BOOKING">
+                                    <color key="titleColor" red="0.53725490196078429" green="0.29411764705882354" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedEditBooking:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nWB-qb-bAq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ZOh-8F-wRn" firstAttribute="top" secondItem="oHB-uB-W5G" secondAttribute="bottom" constant="5" id="00l-Io-A0l"/>
+                            <constraint firstAttribute="trailing" secondItem="ZOh-8F-wRn" secondAttribute="trailing" constant="20" id="0yq-RM-2ra"/>
+                            <constraint firstAttribute="bottom" secondItem="wmn-ei-XZT" secondAttribute="bottom" constant="10" id="1Rf-Za-VKl"/>
+                            <constraint firstItem="725-5s-wtJ" firstAttribute="leading" secondItem="wmn-ei-XZT" secondAttribute="trailing" constant="10" id="1fI-wD-ubs"/>
+                            <constraint firstItem="oHB-uB-W5G" firstAttribute="leading" secondItem="wmn-ei-XZT" secondAttribute="trailing" constant="10" id="3QQ-8g-aGb"/>
+                            <constraint firstItem="oHB-uB-W5G" firstAttribute="top" secondItem="725-5s-wtJ" secondAttribute="bottom" constant="5" id="CWX-zL-Cfd"/>
+                            <constraint firstItem="725-5s-wtJ" firstAttribute="top" secondItem="hxD-Y2-4dh" secondAttribute="top" constant="10" id="FSy-1r-y6Z"/>
+                            <constraint firstAttribute="bottom" secondItem="ZOh-8F-wRn" secondAttribute="bottom" constant="10" id="KNy-r9-wUH"/>
+                            <constraint firstItem="wmn-ei-XZT" firstAttribute="top" secondItem="hxD-Y2-4dh" secondAttribute="top" constant="10" id="KdL-cD-h1k"/>
+                            <constraint firstItem="j7m-54-Jr6" firstAttribute="leading" secondItem="wmn-ei-XZT" secondAttribute="trailing" constant="1" id="fGv-PI-8Fx"/>
+                            <constraint firstAttribute="bottom" secondItem="j7m-54-Jr6" secondAttribute="bottom" constant="10" id="ok0-t0-NuN"/>
+                            <constraint firstItem="j7m-54-Jr6" firstAttribute="top" secondItem="oHB-uB-W5G" secondAttribute="bottom" constant="5" id="qDo-Kh-feC"/>
+                            <constraint firstItem="wmn-ei-XZT" firstAttribute="leading" secondItem="hxD-Y2-4dh" secondAttribute="leading" constant="10" id="vXh-kw-Y0G"/>
+                            <constraint firstItem="ZOh-8F-wRn" firstAttribute="leading" secondItem="j7m-54-Jr6" secondAttribute="trailing" constant="15" id="xRB-lm-h9O"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hxD-Y2-4dh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5e3-Mb-cxV"/>
+                    <constraint firstItem="hxD-Y2-4dh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6W4-6x-LsI"/>
+                    <constraint firstAttribute="bottom" secondItem="hxD-Y2-4dh" secondAttribute="bottom" id="u1e-Xv-Yry"/>
+                    <constraint firstAttribute="trailing" secondItem="hxD-Y2-4dh" secondAttribute="trailing" id="xxS-hr-hHn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnEditBooking" destination="j7m-54-Jr6" id="TCu-Nc-i23"/>
+                <outlet property="btnGenerateCode" destination="ZOh-8F-wRn" id="w0R-kt-u0z"/>
+                <outlet property="imgView" destination="wmn-ei-XZT" id="fPa-DE-G3a"/>
+                <outlet property="lblBookingDate" destination="oHB-uB-W5G" id="HPt-Vj-8Sj"/>
+                <outlet property="lblResturantName" destination="725-5s-wtJ" id="qlz-Et-oET"/>
+            </connections>
+            <point key="canvasLocation" x="-93" y="31.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="resutrant" width="239" height="239"/>
+    </resources>
+</document>
