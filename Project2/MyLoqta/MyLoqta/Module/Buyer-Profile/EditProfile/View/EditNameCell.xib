@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditNameCell" rowHeight="69" id="fMc-e4-ArQ" customClass="EditNameCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fMc-e4-ArQ" id="Rni-ZL-oQ4">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFV-Hu-1vM">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bDR-Gf-ViC" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="172" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="4km-cF-OnL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="First Name"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Anas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ZO-Ln-wX8">
+                                <rect key="frame" x="5" y="25" width="172" height="20"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="bcT-v2-5nK"/>
+                                </constraints>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fMc-e4-ArQ" id="5WZ-WZ-vcB"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4R5-kV-ION">
+                                <rect key="frame" x="5" y="55" width="172" height="1"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="kkw-V6-BPy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3ZO-Ln-wX8" secondAttribute="trailing" constant="5" id="8uY-Tx-Orc"/>
+                            <constraint firstItem="4R5-kV-ION" firstAttribute="leading" secondItem="3ZO-Ln-wX8" secondAttribute="leading" id="92k-gQ-jWh"/>
+                            <constraint firstItem="4R5-kV-ION" firstAttribute="top" secondItem="3ZO-Ln-wX8" secondAttribute="bottom" constant="10" id="KPm-Cg-lfc"/>
+                            <constraint firstItem="bDR-Gf-ViC" firstAttribute="top" secondItem="pFV-Hu-1vM" secondAttribute="top" constant="5" id="NRh-Eo-QKb"/>
+                            <constraint firstItem="3ZO-Ln-wX8" firstAttribute="top" secondItem="bDR-Gf-ViC" secondAttribute="bottom" id="fl6-ls-PSt"/>
+                            <constraint firstItem="4R5-kV-ION" firstAttribute="trailing" secondItem="3ZO-Ln-wX8" secondAttribute="trailing" id="gye-FB-jYY"/>
+                            <constraint firstItem="3ZO-Ln-wX8" firstAttribute="leading" secondItem="pFV-Hu-1vM" secondAttribute="leading" constant="5" id="nY1-Hy-b6U"/>
+                            <constraint firstAttribute="trailing" secondItem="bDR-Gf-ViC" secondAttribute="trailing" constant="5" id="tIt-sR-fWA"/>
+                            <constraint firstItem="bDR-Gf-ViC" firstAttribute="leading" secondItem="pFV-Hu-1vM" secondAttribute="leading" constant="5" id="xiS-se-bpX"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kn-iy-Sfg">
+                        <rect key="frame" x="194" y="0.0" width="182" height="59.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tjd-Og-d4a" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="5" y="5" width="172" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="HRO-8l-xr3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Last Name"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Al-adwi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u5x-Xf-jAe">
+                                <rect key="frame" x="5" y="25" width="172" height="20"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="J59-2E-U2W"/>
+                                </constraints>
+                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="fMc-e4-ArQ" id="wqc-v9-TSJ"/>
+                                </connections>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G7E-WS-vSz">
+                                <rect key="frame" x="5" y="55" width="172" height="1"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Gl0-i4-ZhW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tjd-Og-d4a" firstAttribute="top" secondItem="5kn-iy-Sfg" secondAttribute="top" constant="5" id="2td-JU-76v"/>
+                            <constraint firstItem="G7E-WS-vSz" firstAttribute="top" secondItem="u5x-Xf-jAe" secondAttribute="bottom" constant="10" id="9P3-0j-w8x"/>
+                            <constraint firstItem="tjd-Og-d4a" firstAttribute="leading" secondItem="5kn-iy-Sfg" secondAttribute="leading" constant="5" id="Egr-MM-WO2"/>
+                            <constraint firstItem="u5x-Xf-jAe" firstAttribute="top" secondItem="tjd-Og-d4a" secondAttribute="bottom" id="GCx-nq-utN"/>
+                            <constraint firstItem="G7E-WS-vSz" firstAttribute="trailing" secondItem="u5x-Xf-jAe" secondAttribute="trailing" id="JLI-Gp-KDy"/>
+                            <constraint firstItem="u5x-Xf-jAe" firstAttribute="leading" secondItem="5kn-iy-Sfg" secondAttribute="leading" constant="5" id="Yjg-DI-gHH"/>
+                            <constraint firstItem="G7E-WS-vSz" firstAttribute="leading" secondItem="u5x-Xf-jAe" secondAttribute="leading" id="ZMY-SB-PXp"/>
+                            <constraint firstAttribute="trailing" secondItem="tjd-Og-d4a" secondAttribute="trailing" constant="5" id="dS5-uB-QYf"/>
+                            <constraint firstAttribute="trailing" secondItem="u5x-Xf-jAe" secondAttribute="trailing" constant="5" id="ibn-4W-bs1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5kn-iy-Sfg" firstAttribute="top" secondItem="Rni-ZL-oQ4" secondAttribute="top" id="2zc-PB-ktW"/>
+                    <constraint firstItem="pFV-Hu-1vM" firstAttribute="leading" secondItem="Rni-ZL-oQ4" secondAttribute="leading" id="7lj-S6-d0M"/>
+                    <constraint firstItem="pFV-Hu-1vM" firstAttribute="top" secondItem="Rni-ZL-oQ4" secondAttribute="top" id="Mjq-Ra-MyZ"/>
+                    <constraint firstItem="5kn-iy-Sfg" firstAttribute="height" secondItem="pFV-Hu-1vM" secondAttribute="height" id="NWq-dv-aWV"/>
+                    <constraint firstAttribute="bottom" secondItem="5kn-iy-Sfg" secondAttribute="bottom" id="U7Q-gR-jeI"/>
+                    <constraint firstItem="5kn-iy-Sfg" firstAttribute="width" secondItem="pFV-Hu-1vM" secondAttribute="width" id="Wbr-dH-z2C"/>
+                    <constraint firstAttribute="trailing" secondItem="5kn-iy-Sfg" secondAttribute="trailing" id="duM-Zw-WIp"/>
+                    <constraint firstAttribute="bottom" secondItem="pFV-Hu-1vM" secondAttribute="bottom" id="nzA-eI-gCc"/>
+                    <constraint firstItem="5kn-iy-Sfg" firstAttribute="leading" secondItem="pFV-Hu-1vM" secondAttribute="trailing" constant="12" id="u1V-S4-Srl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="GYO-38-6ud"/>
+            <connections>
+                <outlet property="lblFirstName" destination="bDR-Gf-ViC" id="Ant-DG-HXi"/>
+                <outlet property="lblLastName" destination="tjd-Og-d4a" id="TNx-vS-TPq"/>
+                <outlet property="txtFieldFirstName" destination="3ZO-Ln-wX8" id="qjf-Ii-8Px"/>
+                <outlet property="txtFieldLastName" destination="u5x-Xf-jAe" id="qfl-C8-oIH"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="-36.5"/>
+        </tableViewCell>
+    </objects>
+</document>

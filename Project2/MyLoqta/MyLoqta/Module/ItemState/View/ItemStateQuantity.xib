@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemStateQuantity" id="KGk-i7-Jjw" customClass="ItemStateQuantity" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QTY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erV-9a-7zt" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="7" width="70" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Nid-iv-qtp"/>
+                            <constraint firstAttribute="width" constant="70" id="sLi-A2-AL5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="QTY"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bG1-0I-Lkl" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="31" width="70" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="WIy-3a-UGc"/>
+                            <constraint firstAttribute="width" constant="70" id="ZYx-gR-L9Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Total"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfg-7O-u6T" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="234" y="16" width="70" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="iPd-1v-90c"/>
+                            <constraint firstAttribute="width" constant="70" id="pvO-2I-rby"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="12"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Total"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTr-0j-Oyj" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="218" y="33" width="70" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Ete-U0-eXh"/>
+                            <constraint firstAttribute="height" constant="18" id="FYI-kH-UDT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yp2-K0-fB6">
+                        <rect key="frame" x="289" y="33" width="15" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="H1j-9P-qIP"/>
+                            <constraint firstAttribute="width" constant="15" id="iuR-iM-K6W"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yp2-K0-fB6" firstAttribute="leading" secondItem="JTr-0j-Oyj" secondAttribute="trailing" constant="1" id="AoM-yp-u8d"/>
+                    <constraint firstItem="yp2-K0-fB6" firstAttribute="top" secondItem="cfg-7O-u6T" secondAttribute="bottom" constant="3" id="NH8-In-myz"/>
+                    <constraint firstAttribute="trailing" secondItem="cfg-7O-u6T" secondAttribute="trailing" constant="16" id="QaP-QX-zzH"/>
+                    <constraint firstItem="erV-9a-7zt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="RL1-SK-IkE"/>
+                    <constraint firstItem="JTr-0j-Oyj" firstAttribute="top" secondItem="cfg-7O-u6T" secondAttribute="bottom" constant="3" id="RWQ-Gl-iOg"/>
+                    <constraint firstItem="bG1-0I-Lkl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="T8c-AF-mgC"/>
+                    <constraint firstItem="cfg-7O-u6T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="TLD-hY-yYi"/>
+                    <constraint firstAttribute="trailing" secondItem="yp2-K0-fB6" secondAttribute="trailing" constant="16" id="VHd-9l-x5A"/>
+                    <constraint firstItem="erV-9a-7zt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aDd-Ps-AiW"/>
+                    <constraint firstItem="bG1-0I-Lkl" firstAttribute="top" secondItem="erV-9a-7zt" secondAttribute="bottom" constant="4" id="i9L-fv-Y3f"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblItemCount" destination="cfg-7O-u6T" id="a4o-Z6-Ncn"/>
+                <outlet property="lblPrice" destination="JTr-0j-Oyj" id="9XK-kv-UnQ"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </tableViewCell>
+    </objects>
+</document>

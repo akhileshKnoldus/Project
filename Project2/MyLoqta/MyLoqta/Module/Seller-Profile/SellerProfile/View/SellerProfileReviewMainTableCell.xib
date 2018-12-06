@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SellerProfileReviewMainTableCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="174.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fan-LX-zfC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tableView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flB-wi-CIx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="175"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data available!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5c-3T-AL2" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="81.5" y="24.5" width="213" height="26"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="No data available!!!"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y5c-3T-AL2" firstAttribute="centerX" secondItem="flB-wi-CIx" secondAttribute="centerX" id="C8g-wV-b4P"/>
+                            <constraint firstItem="y5c-3T-AL2" firstAttribute="centerY" secondItem="flB-wi-CIx" secondAttribute="centerY" constant="-50" id="ZBL-dk-oq0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="flB-wi-CIx" firstAttribute="leading" secondItem="fan-LX-zfC" secondAttribute="leading" id="EkH-AA-8pS"/>
+                    <constraint firstItem="flB-wi-CIx" firstAttribute="trailing" secondItem="fan-LX-zfC" secondAttribute="trailing" id="FP5-DW-80Z"/>
+                    <constraint firstItem="flB-wi-CIx" firstAttribute="bottom" secondItem="fan-LX-zfC" secondAttribute="bottom" id="LOU-Mx-Q3P"/>
+                    <constraint firstAttribute="bottom" secondItem="fan-LX-zfC" secondAttribute="bottom" id="TPc-eT-X9l"/>
+                    <constraint firstAttribute="trailing" secondItem="fan-LX-zfC" secondAttribute="trailing" id="U8n-FR-VoO"/>
+                    <constraint firstItem="flB-wi-CIx" firstAttribute="top" secondItem="fan-LX-zfC" secondAttribute="top" id="UML-ia-6OX"/>
+                    <constraint firstItem="fan-LX-zfC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fzC-uE-VWd"/>
+                    <constraint firstItem="fan-LX-zfC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ioc-UQ-a0b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="tblViewReviews" destination="fan-LX-zfC" id="SGf-bs-Oqt"/>
+                <outlet property="viewNoData" destination="flB-wi-CIx" id="NyJ-zI-9DL"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="144.5"/>
+        </tableViewCell>
+    </objects>
+</document>

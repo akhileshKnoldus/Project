@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RejectReasonCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the reason of returning  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ec-Mv-pfz" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="365" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="mEI-KZ-fGa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Select the reason of returning  "/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reason" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YfX-kI-9ZM">
+                        <rect key="frame" x="5" y="30" width="340" height="18"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down_gray" translatesAutoresizingMaskIntoConstraints="NO" id="ske-RQ-y4r">
+                        <rect key="frame" x="355" y="35" width="15" height="8"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="4Sh-tR-YGu"/>
+                            <constraint firstAttribute="height" constant="8" id="tpS-lx-XQQ"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKO-BY-ZbJ">
+                        <rect key="frame" x="5" y="58" width="365" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="So9-Nu-kZr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nKO-BY-ZbJ" firstAttribute="top" secondItem="YfX-kI-9ZM" secondAttribute="bottom" constant="10" id="GI9-nv-HY4"/>
+                    <constraint firstItem="YfX-kI-9ZM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="JUF-mX-Ama"/>
+                    <constraint firstItem="3ec-Mv-pfz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="cMc-hT-O0I"/>
+                    <constraint firstAttribute="bottom" secondItem="nKO-BY-ZbJ" secondAttribute="bottom" constant="5" id="gIm-Zb-x7R"/>
+                    <constraint firstItem="ske-RQ-y4r" firstAttribute="centerY" secondItem="YfX-kI-9ZM" secondAttribute="centerY" id="iyL-NS-Nm0"/>
+                    <constraint firstItem="ske-RQ-y4r" firstAttribute="leading" secondItem="YfX-kI-9ZM" secondAttribute="trailing" constant="10" id="jzo-js-zpe"/>
+                    <constraint firstAttribute="trailing" secondItem="3ec-Mv-pfz" secondAttribute="trailing" constant="5" id="lfb-WD-HEA"/>
+                    <constraint firstAttribute="trailing" secondItem="ske-RQ-y4r" secondAttribute="trailing" constant="5" id="maZ-3z-BmQ"/>
+                    <constraint firstAttribute="trailing" secondItem="nKO-BY-ZbJ" secondAttribute="trailing" constant="5" id="sT5-ez-w1S"/>
+                    <constraint firstItem="YfX-kI-9ZM" firstAttribute="top" secondItem="3ec-Mv-pfz" secondAttribute="bottom" constant="10" id="uJN-9r-39X"/>
+                    <constraint firstItem="3ec-Mv-pfz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yc0-48-M2I"/>
+                    <constraint firstItem="nKO-BY-ZbJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="zaM-9v-5ee"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblPlaceholder" destination="3ec-Mv-pfz" id="Vqf-tv-UfN"/>
+                <outlet property="lblValue" destination="YfX-kI-9ZM" id="uWc-Ka-AWU"/>
+            </connections>
+            <point key="canvasLocation" x="-54.5" y="101.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_down_gray" width="14" height="8"/>
+    </resources>
+</document>

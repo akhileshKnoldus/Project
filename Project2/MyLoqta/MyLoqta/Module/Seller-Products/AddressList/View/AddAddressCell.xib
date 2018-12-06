@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddAddressCell" rowHeight="56" id="KGk-i7-Jjw" customClass="AddAddressCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnD-UJ-WKp">
+                        <rect key="frame" x="16" y="53.5" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="a9B-oI-jjM"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right_gray_large" translatesAutoresizingMaskIntoConstraints="NO" id="PU7-T3-9GG">
+                        <rect key="frame" x="298" y="21" width="6" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="b0Z-T4-zZB"/>
+                            <constraint firstAttribute="width" constant="6" id="oAO-du-I7h"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edf-IW-4Kl">
+                        <rect key="frame" x="16" y="0.0" width="262" height="53.5"/>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <state key="normal" title="Add new shipping address">
+                            <color key="titleColor" red="0.97254901959999995" green="0.58823529409999997" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="edf-IW-4Kl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0tx-5Q-bdC"/>
+                    <constraint firstItem="PU7-T3-9GG" firstAttribute="leading" secondItem="edf-IW-4Kl" secondAttribute="trailing" constant="20" id="4nA-gx-7DP"/>
+                    <constraint firstAttribute="bottom" secondItem="EnD-UJ-WKp" secondAttribute="bottom" id="7Fz-D4-PXN"/>
+                    <constraint firstItem="EnD-UJ-WKp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Qay-UJ-KOD"/>
+                    <constraint firstAttribute="trailing" secondItem="PU7-T3-9GG" secondAttribute="trailing" constant="16" id="aci-1v-l3w"/>
+                    <constraint firstAttribute="trailing" secondItem="EnD-UJ-WKp" secondAttribute="trailing" constant="16" id="cqL-lJ-FiI"/>
+                    <constraint firstItem="EnD-UJ-WKp" firstAttribute="top" secondItem="edf-IW-4Kl" secondAttribute="bottom" id="dE5-q5-yIr"/>
+                    <constraint firstItem="PU7-T3-9GG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hSo-6r-MvQ"/>
+                    <constraint firstItem="edf-IW-4Kl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kv5-2f-5do"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnNewAddress" destination="edf-IW-4Kl" id="Tm3-Yb-40n"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="59.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_right_gray_large" width="8" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CheckoutTotalAmountTableCell" id="KGk-i7-Jjw" customClass="CheckoutTotalAmountTableCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="3 items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ELk-Ri-Jlg" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10" width="200" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="lCD-9j-7ah"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnh-rJ-rVp" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="62" width="198" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="i2w-lD-06R"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Total"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Shipping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yy-xT-yz0" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="36" width="199" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="l6z-u7-HsR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Shipping"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="424" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SC-3K-dW4" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="244" y="11" width="98" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="aN5-Su-xQS"/>
+                            <constraint firstAttribute="width" constant="98" id="nWg-sP-qRV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FTW-Oy-gTD" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="344" y="12" width="15" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="8m4-Lc-qAp"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="YcK-cH-fbd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="428" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAH-UP-nvh" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="244" y="63" width="98" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="XMg-Wh-7Gm"/>
+                            <constraint firstAttribute="width" constant="98" id="bT4-1E-a1l"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyi-Zh-BwL" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="344" y="64" width="15" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="AB2-vY-T3z"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="ufs-io-RVY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqE-yy-ymX" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="245" y="37" width="97" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="Zf3-bi-Iml"/>
+                            <constraint firstAttribute="width" constant="97" id="hLo-kC-KIy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-Th-R0n" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="344" y="38" width="15" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="15" id="7vl-Bw-kN8"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="12" id="LT4-yK-zDh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xO3-VP-K51">
+                        <rect key="frame" x="0.0" y="100" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="8qR-rI-dAb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4SC-3K-dW4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="CPU-9e-B1U"/>
+                    <constraint firstItem="aqE-yy-ymX" firstAttribute="top" secondItem="4SC-3K-dW4" secondAttribute="bottom" constant="8" id="D2E-49-DQZ"/>
+                    <constraint firstItem="xAH-UP-nvh" firstAttribute="top" secondItem="aqE-yy-ymX" secondAttribute="bottom" constant="8" id="DQu-L0-5qL"/>
+                    <constraint firstItem="7yy-xT-yz0" firstAttribute="top" secondItem="ELk-Ri-Jlg" secondAttribute="bottom" constant="6" id="Ggh-Yg-0ci"/>
+                    <constraint firstItem="7yy-xT-yz0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mzb-Xo-k2v"/>
+                    <constraint firstItem="4SC-3K-dW4" firstAttribute="leading" secondItem="ELk-Ri-Jlg" secondAttribute="trailing" constant="28" id="Nly-XA-Bab"/>
+                    <constraint firstItem="Qyi-Zh-BwL" firstAttribute="leading" secondItem="xAH-UP-nvh" secondAttribute="trailing" constant="2" id="Sod-5h-fD7"/>
+                    <constraint firstItem="xO3-VP-K51" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="X58-Wl-tdC"/>
+                    <constraint firstItem="FTW-Oy-gTD" firstAttribute="leading" secondItem="4SC-3K-dW4" secondAttribute="trailing" constant="2" id="a8c-je-oLh"/>
+                    <constraint firstAttribute="trailing" secondItem="tbD-Th-R0n" secondAttribute="trailing" constant="16" id="aXa-3y-hZS"/>
+                    <constraint firstItem="aqE-yy-ymX" firstAttribute="leading" secondItem="7yy-xT-yz0" secondAttribute="trailing" constant="30" id="bN9-nj-F5i"/>
+                    <constraint firstItem="tbD-Th-R0n" firstAttribute="leading" secondItem="aqE-yy-ymX" secondAttribute="trailing" constant="2" id="dYT-EC-89A"/>
+                    <constraint firstItem="ELk-Ri-Jlg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="icT-je-Dce"/>
+                    <constraint firstItem="gnh-rJ-rVp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jwU-h9-Y44"/>
+                    <constraint firstItem="xAH-UP-nvh" firstAttribute="leading" secondItem="gnh-rJ-rVp" secondAttribute="trailing" constant="30" id="kwe-mQ-6Ww"/>
+                    <constraint firstItem="tbD-Th-R0n" firstAttribute="top" secondItem="FTW-Oy-gTD" secondAttribute="bottom" constant="14" id="nGg-Yj-kjS"/>
+                    <constraint firstItem="ELk-Ri-Jlg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="osh-2c-gke"/>
+                    <constraint firstAttribute="trailing" secondItem="FTW-Oy-gTD" secondAttribute="trailing" constant="16" id="out-uQ-Z81"/>
+                    <constraint firstAttribute="trailing" secondItem="Qyi-Zh-BwL" secondAttribute="trailing" constant="16" id="qZ2-wr-MMw"/>
+                    <constraint firstAttribute="bottom" secondItem="xO3-VP-K51" secondAttribute="bottom" id="rjX-mI-6It"/>
+                    <constraint firstAttribute="trailing" secondItem="xO3-VP-K51" secondAttribute="trailing" id="ta5-YG-GV9"/>
+                    <constraint firstItem="Qyi-Zh-BwL" firstAttribute="top" secondItem="tbD-Th-R0n" secondAttribute="bottom" constant="14" id="vUd-td-OF1"/>
+                    <constraint firstItem="FTW-Oy-gTD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="vj8-Ck-Kjl"/>
+                    <constraint firstItem="gnh-rJ-rVp" firstAttribute="top" secondItem="7yy-xT-yz0" secondAttribute="bottom" constant="6" id="xQc-ST-0zh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="constWidthShippingCurrency" destination="7vl-Bw-kN8" id="MeY-yx-ZHZ"/>
+                <outlet property="lblNoOfItems" destination="ELk-Ri-Jlg" id="M2G-Sr-pbg"/>
+                <outlet property="lblShippingCurrency" destination="tbD-Th-R0n" id="H7W-mk-dB2"/>
+                <outlet property="lblTotalPrice" destination="xAH-UP-nvh" id="sUf-Bw-069"/>
+                <outlet property="lblTotalProductPrice" destination="4SC-3K-dW4" id="RM5-Yf-3Lw"/>
+                <outlet property="lblTotalShippingPrice" destination="aqE-yy-ymX" id="u1L-7f-r4K"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="133"/>
+        </tableViewCell>
+    </objects>
+</document>

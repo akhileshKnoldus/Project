@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileDetailCell" id="KGk-i7-Jjw" customClass="ProfileDetailCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="165.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4m9-Ug-Wch" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10" width="0.0" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="160" id="Igp-7d-vjO"/>
+                            <constraint firstAttribute="height" constant="40" id="oZ8-MG-RZm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="26"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_blue_large" translatesAutoresizingMaskIntoConstraints="NO" id="g58-OP-wuk">
+                        <rect key="frame" x="18" y="22" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="1vi-Op-aKa"/>
+                            <constraint firstAttribute="height" constant="16" id="Pz4-PW-Oj5"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_sellerprofile_location" translatesAutoresizingMaskIntoConstraints="NO" id="yps-2i-YDY">
+                        <rect key="frame" x="16" y="57.5" width="0.0" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="7ES-wg-99z"/>
+                            <constraint firstAttribute="height" constant="15" id="FGs-82-KEE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4VW-zi-kuN" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="56" width="77" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="77" id="9sP-AB-uvG"/>
+                            <constraint firstAttribute="height" constant="18" id="QS3-3N-TUO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pI3-VI-1PJ">
+                        <rect key="frame" x="118" y="81" width="26" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="26" id="LgN-TE-WIo"/>
+                            <constraint firstAttribute="height" constant="18" id="fsI-Pr-ycm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.4549019608" green="0.4549019608" blue="0.4549019608" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVu-xp-sk9" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="104" width="32" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="T7e-SI-Bms"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="vHb-ih-fjf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="followers" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aap-Ji-ait" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="124" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5JR-m7-LFd"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="qw8-it-E8U"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="followers"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ky3-55-hwJ" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="88" y="104" width="32" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="XkU-B3-njx"/>
+                            <constraint firstAttribute="height" constant="20" id="gMN-Th-Y8F"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="following" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="885-3l-Gcb" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="88" y="124" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="G9r-cW-la4"/>
+                            <constraint firstAttribute="height" constant="20" id="KJd-SI-ya1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="following"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9sa-Xw-OP9" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="160" y="104" width="32" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="32" id="sck-Wr-Jak"/>
+                            <constraint firstAttribute="height" constant="20" id="zYi-9l-zXG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="likes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="88F-Gm-wtv" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="160" y="124" width="50" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="AX9-tT-awb"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="pDh-VW-9kF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="likes"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-DW-7Mu" customClass="AVView" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="207" y="14" width="97" height="32"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plus_white" translatesAutoresizingMaskIntoConstraints="NO" id="JjZ-0h-d19">
+                                <rect key="frame" x="23" y="12" width="8" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="8" id="Hh9-I7-pqP"/>
+                                    <constraint firstAttribute="height" constant="8" id="xcv-TM-cPm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Follow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pH-lr-R7j">
+                                <rect key="frame" x="36" y="5" width="38.5" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="70" id="IaR-6F-KV7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6F-1z-PgW">
+                                <rect key="frame" x="0.0" y="0.0" width="97" height="32"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" title="Following"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonActive" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Follow"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapFollow:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YnP-0g-fZ8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="z6F-1z-PgW" firstAttribute="top" secondItem="uB4-DW-7Mu" secondAttribute="top" id="AFc-Fa-LCU"/>
+                            <constraint firstItem="JjZ-0h-d19" firstAttribute="centerY" secondItem="0pH-lr-R7j" secondAttribute="centerY" id="E4E-d2-Vay"/>
+                            <constraint firstAttribute="height" constant="32" id="F5x-vb-5A2"/>
+                            <constraint firstItem="z6F-1z-PgW" firstAttribute="leading" secondItem="uB4-DW-7Mu" secondAttribute="leadingMargin" constant="-8" id="I1h-68-OnA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z6F-1z-PgW" secondAttribute="trailing" constant="-8" id="KzH-C1-QUw"/>
+                            <constraint firstAttribute="bottom" secondItem="z6F-1z-PgW" secondAttribute="bottom" id="NxU-AO-3Wp"/>
+                            <constraint firstItem="0pH-lr-R7j" firstAttribute="top" secondItem="uB4-DW-7Mu" secondAttribute="top" constant="5" id="TNJ-Lc-EVn"/>
+                            <constraint firstAttribute="bottom" secondItem="0pH-lr-R7j" secondAttribute="bottom" constant="5" id="jao-cS-N2z"/>
+                            <constraint firstAttribute="width" constant="97" id="k1n-m2-9Sz"/>
+                            <constraint firstItem="0pH-lr-R7j" firstAttribute="leading" secondItem="JjZ-0h-d19" secondAttribute="trailing" constant="5" id="kZE-Pb-a6a"/>
+                            <constraint firstItem="0pH-lr-R7j" firstAttribute="centerX" secondItem="uB4-DW-7Mu" secondAttribute="centerX" constant="6.5" id="pHh-3b-MRD"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rde-kH-N5H" customClass="CosmosView" customModule="Cosmos">
+                        <rect key="frame" x="16" y="82" width="100" height="12"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="4Zh-I9-spJ"/>
+                            <constraint firstAttribute="width" constant="100" id="UDX-zx-0lE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="0.98431372549019602" green="0.77647058823529413" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyColor">
+                                <color key="value" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledBorderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="emptyBorderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="filledBorderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="g58-OP-wuk" firstAttribute="centerY" secondItem="4m9-Ug-Wch" secondAttribute="centerY" id="9pX-IX-Byx"/>
+                    <constraint firstItem="GVu-xp-sk9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="B9G-vP-nA9"/>
+                    <constraint firstItem="4VW-zi-kuN" firstAttribute="leading" secondItem="yps-2i-YDY" secondAttribute="trailing" id="BuF-od-rsU"/>
+                    <constraint firstItem="88F-Gm-wtv" firstAttribute="top" secondItem="9sa-Xw-OP9" secondAttribute="bottom" id="Bzi-k4-cct"/>
+                    <constraint firstItem="rde-kH-N5H" firstAttribute="top" secondItem="4VW-zi-kuN" secondAttribute="bottom" constant="8" id="DeJ-ED-Yrd"/>
+                    <constraint firstItem="4VW-zi-kuN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="45" id="G3x-JF-dQs"/>
+                    <constraint firstItem="g58-OP-wuk" firstAttribute="leading" secondItem="4m9-Ug-Wch" secondAttribute="trailing" constant="2" id="InP-IB-aDJ"/>
+                    <constraint firstItem="4m9-Ug-Wch" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Jfq-I2-UgW"/>
+                    <constraint firstItem="4m9-Ug-Wch" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LgC-dd-cwK"/>
+                    <constraint firstItem="aap-Ji-ait" firstAttribute="leading" secondItem="GVu-xp-sk9" secondAttribute="leading" id="OwG-rc-fO5"/>
+                    <constraint firstItem="885-3l-Gcb" firstAttribute="leading" secondItem="Ky3-55-hwJ" secondAttribute="leading" id="PlG-bz-GTZ"/>
+                    <constraint firstItem="uB4-DW-7Mu" firstAttribute="centerY" secondItem="4m9-Ug-Wch" secondAttribute="centerY" id="ZNf-ft-ndn"/>
+                    <constraint firstItem="Ky3-55-hwJ" firstAttribute="leading" secondItem="GVu-xp-sk9" secondAttribute="trailing" constant="40" id="aqG-hh-Ffa"/>
+                    <constraint firstItem="885-3l-Gcb" firstAttribute="top" secondItem="Ky3-55-hwJ" secondAttribute="bottom" id="diz-hF-VUw"/>
+                    <constraint firstItem="pI3-VI-1PJ" firstAttribute="leading" secondItem="rde-kH-N5H" secondAttribute="trailing" constant="2" id="fUh-gO-YRA"/>
+                    <constraint firstItem="9sa-Xw-OP9" firstAttribute="top" secondItem="Ky3-55-hwJ" secondAttribute="top" id="gws-W7-4C3"/>
+                    <constraint firstItem="rde-kH-N5H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="jgP-xv-Mmf"/>
+                    <constraint firstItem="pI3-VI-1PJ" firstAttribute="centerY" secondItem="rde-kH-N5H" secondAttribute="centerY" constant="2" id="lf2-Vt-7ct"/>
+                    <constraint firstItem="Ky3-55-hwJ" firstAttribute="top" secondItem="pI3-VI-1PJ" secondAttribute="bottom" constant="5" id="m6d-rY-Jgf"/>
+                    <constraint firstItem="yps-2i-YDY" firstAttribute="centerY" secondItem="4VW-zi-kuN" secondAttribute="centerY" id="nOn-ap-pyY"/>
+                    <constraint firstItem="yps-2i-YDY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nlt-EB-eKl"/>
+                    <constraint firstItem="88F-Gm-wtv" firstAttribute="leading" secondItem="9sa-Xw-OP9" secondAttribute="leading" id="oH8-8X-dXb"/>
+                    <constraint firstItem="aap-Ji-ait" firstAttribute="top" secondItem="GVu-xp-sk9" secondAttribute="bottom" id="p7Z-gs-q0e"/>
+                    <constraint firstAttribute="trailing" secondItem="uB4-DW-7Mu" secondAttribute="trailing" constant="16" id="tIR-dx-UYN"/>
+                    <constraint firstItem="9sa-Xw-OP9" firstAttribute="leading" secondItem="Ky3-55-hwJ" secondAttribute="trailing" constant="40" id="uwM-aC-1e3"/>
+                    <constraint firstItem="GVu-xp-sk9" firstAttribute="top" secondItem="rde-kH-N5H" secondAttribute="bottom" constant="10" id="wvy-Ce-qRT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnFollow" destination="z6F-1z-PgW" id="iLA-YQ-LS8"/>
+                <outlet property="constraintFollowerCountWidth" destination="vHb-ih-fjf" id="6a3-6r-VUq"/>
+                <outlet property="constraintImgViewCityWidth" destination="7ES-wg-99z" id="dII-Mm-g6O"/>
+                <outlet property="constraintLblCityHeight" destination="QS3-3N-TUO" id="SOz-Gt-QBM"/>
+                <outlet property="constraintLblFollowersWidth" destination="qw8-it-E8U" id="MJ0-L9-8to"/>
+                <outlet property="constraintLblFollowingLeading" destination="aqG-hh-Ffa" id="7Xq-Kb-8bh"/>
+                <outlet property="constraintLblUsernameLeading" destination="BuF-od-rsU" id="aqL-Wn-NOz"/>
+                <outlet property="imgViewFollow" destination="JjZ-0h-d19" id="fRT-cH-ayX"/>
+                <outlet property="imgViewVerificationStatus" destination="g58-OP-wuk" id="0p3-rq-6gJ"/>
+                <outlet property="lblCity" destination="4VW-zi-kuN" id="I0b-u9-bKr"/>
+                <outlet property="lblFollow" destination="0pH-lr-R7j" id="WXF-3y-all"/>
+                <outlet property="lblFollowerCount" destination="GVu-xp-sk9" id="waG-L8-DEy"/>
+                <outlet property="lblFollowers" destination="aap-Ji-ait" id="upf-e1-T3O"/>
+                <outlet property="lblFollowingCount" destination="Ky3-55-hwJ" id="iyF-Ij-6VU"/>
+                <outlet property="lblLastTitle" destination="88F-Gm-wtv" id="Jup-XK-SFe"/>
+                <outlet property="lblLikesCount" destination="9sa-Xw-OP9" id="GRb-Hh-tCT"/>
+                <outlet property="lblMiddleTitle" destination="885-3l-Gcb" id="d6X-XC-GWy"/>
+                <outlet property="lblReviewCount" destination="pI3-VI-1PJ" id="RXU-Qj-Pue"/>
+                <outlet property="lblUserName" destination="4m9-Ug-Wch" id="9fL-TY-haR"/>
+                <outlet property="viewFollow" destination="uB4-DW-7Mu" id="738-oO-60I"/>
+                <outlet property="viewRating" destination="rde-kH-N5H" id="qI6-Nm-4b0"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="115"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_blue_large" width="20" height="20"/>
+        <image name="ic_sellerprofile_location" width="51" height="52"/>
+        <image name="plus_white" width="128" height="128"/>
+    </resources>
+</document>

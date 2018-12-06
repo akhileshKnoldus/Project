@@ -1,0 +1,6 @@
+framework module Pods_MyLoqta {
+  umbrella header "Pods-MyLoqta-umbrella.h"
+
+  export *
+  module * { export * }
+}

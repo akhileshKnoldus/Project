@@ -1,0 +1,151 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AWSCore (2.6.23)
+  - AWSS3 (2.6.23):
+    - AWSCore (= 2.6.23)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - Cloudinary (2.4.0):
+    - Alamofire (~> 4.7.2)
+  - Cosmos (16.0.0)
+  - Crashlytics (3.10.2):
+    - Fabric (~> 1.7.7)
+  - CropViewController (2.3.7)
+  - DataCache (1.3)
+  - Fabric (1.7.7)
+  - FacebookCore (0.3.0):
+    - Bolts (~> 1.8)
+    - FBSDKCoreKit (~> 4.27)
+  - FacebookLogin (0.3.0):
+    - Bolts (~> 1.8)
+    - FacebookCore (~> 0.3)
+    - FBSDKCoreKit (~> 4.27)
+    - FBSDKLoginKit (~> 4.27)
+  - FBSDKCoreKit (4.33.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.33.0):
+    - FBSDKCoreKit
+  - Firebase/Auth (5.4.1):
+    - Firebase/CoreOnly
+    - FirebaseAuth (= 5.0.2)
+  - Firebase/CoreOnly (5.4.1):
+    - FirebaseCore (= 5.0.6)
+  - FirebaseAuth (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseCore (5.0.6):
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+  - GoogleSignIn (4.1.2):
+    - GoogleToolboxForMac/NSDictionary+URLArguments (~> 2.1)
+    - GoogleToolboxForMac/NSString+URLArguments (~> 2.1)
+    - GTMOAuth2 (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GoogleToolboxForMac/DebugUtils (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/NSData+zlib (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/NSDictionary+URLArguments (2.1.4):
+    - GoogleToolboxForMac/DebugUtils (= 2.1.4)
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+    - GoogleToolboxForMac/NSString+URLArguments (= 2.1.4)
+  - GoogleToolboxForMac/NSString+URLArguments (2.1.4)
+  - GradientProgress (1.0)
+  - GTMOAuth2 (1.1.6):
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.1.15):
+    - GTMSessionFetcher/Full (= 1.1.15)
+  - GTMSessionFetcher/Core (1.1.15)
+  - GTMSessionFetcher/Full (1.1.15):
+    - GTMSessionFetcher/Core (= 1.1.15)
+  - JSONWebToken (2.2.0)
+  - Kingfisher (4.8.0)
+  - lottie-ios (2.5.0)
+  - MGSwipeTableCell (1.6.7)
+  - ObjectMapper (3.2.0)
+  - ReachabilitySwift (3)
+  - ReadMoreTextView (3.0.0)
+  - Socket.IO-Client-Swift (13.3.0):
+    - Starscream (~> 3.0.2)
+  - Starscream (3.0.5)
+  - SVProgressHUD (2.2.5)
+  - SwiftRangeSlider (2.0.0)
+  - SwiftyUserDefaults (3.0.1)
+  - SwipeCellKit (2.4.3)
+  - TPKeyboardAvoiding (1.3.2)
+  - UITextView+Placeholder (1.2.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - AWSS3
+  - Cloudinary (~> 2.0)
+  - Cosmos (~> 16.0)
+  - Crashlytics
+  - CropViewController
+  - DataCache
+  - Fabric
+  - FacebookLogin
+  - Firebase/Auth
+  - GoogleSignIn
+  - GradientProgress
+  - JSONWebToken
+  - Kingfisher
+  - lottie-ios
+  - MGSwipeTableCell
+  - ObjectMapper
+  - ReachabilitySwift (~> 3)
+  - ReadMoreTextView
+  - Socket.IO-Client-Swift
+  - SVProgressHUD
+  - SwiftRangeSlider
+  - SwiftyUserDefaults
+  - SwipeCellKit
+  - TPKeyboardAvoiding
+  - UITextView+Placeholder
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AWSCore: d56f69d7312e652e51c70f3b25e1687a5c2d06ca
+  AWSS3: 198942f234628f1ad1c373725d65c33ebfe87af6
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  Cloudinary: d87b545d6a5d00c4022bec964839fdaf359d7c53
+  Cosmos: 7bcee0fa858a9355a214f2a181be5dffcee42c81
+  Crashlytics: 0360624eea1c978a743feddb2fb1ef8b37fb7a0d
+  CropViewController: a9d579b526926c4e1caf754a89a9ac1c20aaa8eb
+  DataCache: 1c954742d1fe4507c20ce27bfdbf4d8288f7a21e
+  Fabric: bda89e242bce1b7b8ab264248cf3407774ce0095
+  FacebookCore: 3ffa190a3f1f96cec0e44d3fc221bc322c595ffa
+  FacebookLogin: 0af839ea858faef99550d16596b87b4a8e8906e6
+  FBSDKCoreKit: 572b047a7e029bc44542bcf8a59414e7ff2b543e
+  FBSDKLoginKit: 88cb456349cfb3b554427ce4f8b43729d85dfb40
+  Firebase: 355bd535bfdacaa82a7fe8d9784115edefd6fc03
+  FirebaseAuth: 096e457cdd4274412a66c4a35874787e411f5a03
+  FirebaseCore: 4c28e3b9708ba48a765e76515f913a71596eb5dd
+  GoogleSignIn: d9ef55b10f0aa401a5de2747f59b725e4b9732ac
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GradientProgress: ee9c47443c80059b0367467d267b2dd9572de5e2
+  GTMOAuth2: c77fe325e4acd453837e72d91e3b5f13116857b2
+  GTMSessionFetcher: 5fa5b80fd20e439ef5f545fb2cb3ca6c6714caa2
+  JSONWebToken: 6fae32489632658d563dd6952a5c34020ea813e4
+  Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  MGSwipeTableCell: fb20e983988bde2b8d0df29c2d9e1d8ffd10b74a
+  ObjectMapper: 5cccd2de6f253eda859df8116a5a554d9769e859
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+  ReadMoreTextView: d872de55c5850c702f8d8ce591fb70e5d00c873a
+  Socket.IO-Client-Swift: 0afb192a562db90d50e3f7f7421c06925a3f0179
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftRangeSlider: f86e3b637c961120158fa1a89277c8343845cbe4
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
+  SwipeCellKit: cee9906e6d3a36e22ad1a852fba7f8fa0839d113
+  TPKeyboardAvoiding: cb69d5ddbe90ce0170e4bc2db1e5e41d4a3ad9a4
+  UITextView+Placeholder: 0c3efd97f37ea64bde7f34cc6e90fe02e87b3909
+
+PODFILE CHECKSUM: 169e93b86e817bc244c07f73f4ce01cd3141e06a
+
+COCOAPODS: 1.4.0

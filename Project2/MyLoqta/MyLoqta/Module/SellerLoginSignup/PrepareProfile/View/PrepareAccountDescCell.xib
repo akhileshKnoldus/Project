@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PrepareAccountDescCell" rowHeight="155" id="ULd-YV-WEV" customClass="PrepareAccountDescCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ULd-YV-WEV" id="d8q-77-j5d">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Zbl-VL-2wI" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="5" y="15" width="355" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="ZZL-NR-nQK"/>
+                        </constraints>
+                        <string key="text">Prepare
+your store</string>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="33"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey">
+                                <string key="value">Prepare
+your store</string>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filled profiles helps to increase to sale items faster" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EgZ-Wf-2VO" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="5" y="105" width="340" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="uzR-Nx-EIq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Filled profiles helps to increase to sale items faster"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Zbl-VL-2wI" secondAttribute="trailing" constant="15" id="BYp-vM-kwV"/>
+                    <constraint firstItem="EgZ-Wf-2VO" firstAttribute="leading" secondItem="d8q-77-j5d" secondAttribute="leading" constant="5" id="Mwi-s7-8pa"/>
+                    <constraint firstItem="Zbl-VL-2wI" firstAttribute="leading" secondItem="d8q-77-j5d" secondAttribute="leading" constant="5" id="bvH-tF-8Z0"/>
+                    <constraint firstItem="Zbl-VL-2wI" firstAttribute="top" secondItem="d8q-77-j5d" secondAttribute="top" constant="15" id="pCx-z0-YrK"/>
+                    <constraint firstAttribute="trailing" secondItem="EgZ-Wf-2VO" secondAttribute="trailing" constant="30" id="tzI-XA-gEB"/>
+                    <constraint firstItem="EgZ-Wf-2VO" firstAttribute="top" secondItem="Zbl-VL-2wI" secondAttribute="bottom" constant="10" id="xNy-Ol-Khe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="7xc-iZ-sWq"/>
+            <connections>
+                <outlet property="lblDescription" destination="EgZ-Wf-2VO" id="FGu-5j-DmA"/>
+                <outlet property="lblHeader" destination="Zbl-VL-2wI" id="wMG-5g-H0D"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="145.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemNameCell" id="KGk-i7-Jjw" customClass="ItemNameCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhi-04-t0N" customClass="SMFloatingLabelTextField">
+                        <rect key="frame" x="42" y="4" width="262" height="55"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </textField>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_orange" translatesAutoresizingMaskIntoConstraints="NO" id="ucP-cc-taH">
+                        <rect key="frame" x="16" y="3" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="An2-el-gi4"/>
+                            <constraint firstAttribute="height" constant="15" id="vwx-kG-Vc5"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8jL-Fw-Wlj">
+                        <rect key="frame" x="42" y="54" width="262" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="RRu-kk-cit"/>
+                            <constraint firstAttribute="height" constant="1" id="jgc-vB-1z4"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESH-Vg-V2i" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="299" y="8" width="5" height="12"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.95686274509803915" blue="0.97254901960784312" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="5" id="fTH-Np-5Cb"/>
+                            <constraint firstAttribute="height" constant="12" id="lje-Be-Dpf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="10"/>
+                        <color key="textColor" red="0.5725490196078431" green="0.64313725490196072" blue="0.72549019607843135" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="top">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="left">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="right">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ESH-Vg-V2i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="5MJ-i8-rWX"/>
+                    <constraint firstAttribute="bottom" secondItem="zhi-04-t0N" secondAttribute="bottom" constant="-4.5" id="KU2-se-wHh"/>
+                    <constraint firstAttribute="trailing" secondItem="ESH-Vg-V2i" secondAttribute="trailing" constant="16" id="V1z-bE-9Dz"/>
+                    <constraint firstItem="ucP-cc-taH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="Vuy-ii-czB"/>
+                    <constraint firstItem="8jL-Fw-Wlj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="42" id="frs-AY-fNB"/>
+                    <constraint firstItem="zhi-04-t0N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="42" id="h2f-yY-Ys6"/>
+                    <constraint firstItem="ucP-cc-taH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ixz-1G-Huc"/>
+                    <constraint firstItem="zhi-04-t0N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="jgH-VB-73b"/>
+                    <constraint firstAttribute="bottom" secondItem="8jL-Fw-Wlj" secondAttribute="bottom" id="npN-Nz-6fi"/>
+                    <constraint firstAttribute="trailing" secondItem="zhi-04-t0N" secondAttribute="trailing" constant="16" id="nte-OC-JdW"/>
+                    <constraint firstAttribute="trailing" secondItem="8jL-Fw-Wlj" secondAttribute="trailing" constant="16" id="ymk-Qb-Lvc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgViewCheck" destination="ucP-cc-taH" id="bpZ-fJ-fVZ"/>
+                <outlet property="lblTextCount" destination="ESH-Vg-V2i" id="Eo1-Um-lnA"/>
+                <outlet property="txtItemName" destination="zhi-04-t0N" id="nHm-XH-psq"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_orange" width="20" height="20"/>
+    </resources>
+</document>

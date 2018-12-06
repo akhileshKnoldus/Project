@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetailProductAnswer" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyx-Up-H0z">
+                        <rect key="frame" x="0.0" y="78.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1oj-Iz-pTt"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc6-Qg-InY">
+                        <rect key="frame" x="74" y="15" width="43" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="7Tv-0Z-XvG"/>
+                            <constraint firstAttribute="height" constant="18" id="ddY-gX-8Ee"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6l-hg-Dir">
+                        <rect key="frame" x="74" y="40" width="230" height="18"/>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3h ago" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFO-3y-6bE">
+                        <rect key="frame" x="261" y="14" width="43" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="43" id="XlY-T9-Vt3"/>
+                            <constraint firstAttribute="height" constant="13" id="blJ-bh-5jt"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.71764705880000002" green="0.71764705880000002" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-gV-fHu">
+                        <rect key="frame" x="16" y="15" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="1z6-LU-gPy"/>
+                            <constraint firstAttribute="height" constant="48" id="8L6-Eq-smT"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb8-HA-AHx">
+                        <rect key="frame" x="83" y="50" width="155" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="4av-8G-JJc"/>
+                            <constraint firstAttribute="width" constant="155" id="EcO-iy-cjh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <state key="normal" title="Show More">
+                            <color key="titleColor" red="0.97254901959999995" green="0.58823529409999997" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.56999999999999995" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fyx-Up-H0z" secondAttribute="trailing" id="8Jf-q5-KEx"/>
+                    <constraint firstItem="sc6-Qg-InY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="74" id="DIj-D7-nUU"/>
+                    <constraint firstItem="I6l-hg-Dir" firstAttribute="leading" secondItem="tuv-gV-fHu" secondAttribute="trailing" constant="10" id="HAW-is-nma"/>
+                    <constraint firstAttribute="trailing" secondItem="pFO-3y-6bE" secondAttribute="trailing" constant="16" id="HVt-6f-Ae4"/>
+                    <constraint firstItem="fyx-Up-H0z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Hka-nW-XKQ"/>
+                    <constraint firstItem="tuv-gV-fHu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LhE-TU-1sc"/>
+                    <constraint firstItem="vb8-HA-AHx" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TIw-JV-Sbb"/>
+                    <constraint firstItem="pFO-3y-6bE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="UbM-Le-Rez"/>
+                    <constraint firstAttribute="bottom" secondItem="fyx-Up-H0z" secondAttribute="bottom" id="bwd-MO-9vX"/>
+                    <constraint firstItem="I6l-hg-Dir" firstAttribute="top" secondItem="sc6-Qg-InY" secondAttribute="bottom" constant="7" id="d4q-Qm-o71"/>
+                    <constraint firstAttribute="trailing" secondItem="I6l-hg-Dir" secondAttribute="trailing" constant="16" id="jbh-py-yqa"/>
+                    <constraint firstItem="sc6-Qg-InY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="kR2-Gb-RVC"/>
+                    <constraint firstAttribute="bottom" secondItem="vb8-HA-AHx" secondAttribute="bottom" id="s8N-EC-ezE"/>
+                    <constraint firstItem="tuv-gV-fHu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="ttI-zr-6Wg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnShowMore" destination="vb8-HA-AHx" id="9aN-JW-dFg"/>
+                <outlet property="imgViewUser" destination="tuv-gV-fHu" id="HIa-Xc-xVJ"/>
+                <outlet property="lblQuestion" destination="I6l-hg-Dir" id="gFi-hm-j6H"/>
+                <outlet property="lblTimeAgo" destination="pFO-3y-6bE" id="JhU-7Y-1Gy"/>
+                <outlet property="lblUserName" destination="sc6-Qg-InY" id="Uk7-Yc-WUW"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TagsCell" id="KGk-i7-Jjw" customClass="TagsCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEm-x1-o9D">
+                        <rect key="frame" x="42" y="2" width="80" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="9s8-sG-I6Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="D8y-sQ-P0N">
+                        <rect key="frame" x="34" y="22" width="270" height="48"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="n3R-Ls-fqo"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cYy-jG-Txx">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aEm-x1-o9D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="4Nl-Lv-yCS"/>
+                    <constraint firstItem="D8y-sQ-P0N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="34" id="LHS-0G-jP5"/>
+                    <constraint firstAttribute="trailing" secondItem="D8y-sQ-P0N" secondAttribute="trailing" constant="16" id="Un9-99-5sf"/>
+                    <constraint firstAttribute="bottom" secondItem="D8y-sQ-P0N" secondAttribute="bottom" constant="4.5" id="gG2-wB-Hjk"/>
+                    <constraint firstItem="D8y-sQ-P0N" firstAttribute="top" secondItem="aEm-x1-o9D" secondAttribute="bottom" constant="5" id="kAD-Bw-GvO"/>
+                    <constraint firstItem="aEm-x1-o9D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="42" id="rbr-r7-kL9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="D8y-sQ-P0N" id="DU7-os-K3a"/>
+                <outlet property="lblPlaceholder" destination="aEm-x1-o9D" id="IqG-ou-PZm"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="75.5"/>
+        </tableViewCell>
+    </objects>
+</document>

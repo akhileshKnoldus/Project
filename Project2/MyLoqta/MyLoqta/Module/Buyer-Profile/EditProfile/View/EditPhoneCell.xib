@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="EditPhoneCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BrN-HN-RcK" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="362" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CKf-s3-yny"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="First Name"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Anas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nEF-cP-yvj">
+                        <rect key="frame" x="5" y="25" width="292" height="20"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="sgC-MS-mwx"/>
+                        </constraints>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUj-4j-MMg">
+                        <rect key="frame" x="307" y="25" width="60" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="opn-oR-IeN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <state key="normal" title="Change">
+                            <color key="titleColor" red="0.97254901960784312" green="0.58823529411764708" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="tapChange:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jmY-AI-b0i"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icC-ob-hKL">
+                        <rect key="frame" x="5" y="55" width="362" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GiE-Gz-jhT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="icC-ob-hKL" firstAttribute="trailing" secondItem="EUj-4j-MMg" secondAttribute="trailing" id="4oF-Xe-M7e"/>
+                    <constraint firstItem="EUj-4j-MMg" firstAttribute="top" secondItem="nEF-cP-yvj" secondAttribute="top" id="H20-i6-Qev"/>
+                    <constraint firstItem="nEF-cP-yvj" firstAttribute="top" secondItem="BrN-HN-RcK" secondAttribute="bottom" id="HPK-3v-C9A"/>
+                    <constraint firstAttribute="trailing" secondItem="BrN-HN-RcK" secondAttribute="trailing" constant="5" id="KD5-dI-ceM"/>
+                    <constraint firstItem="icC-ob-hKL" firstAttribute="leading" secondItem="nEF-cP-yvj" secondAttribute="leading" id="OVj-dE-C2t"/>
+                    <constraint firstItem="BrN-HN-RcK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="YaU-BS-AqX"/>
+                    <constraint firstItem="BrN-HN-RcK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="atC-Ow-wqz"/>
+                    <constraint firstItem="EUj-4j-MMg" firstAttribute="bottom" secondItem="nEF-cP-yvj" secondAttribute="bottom" id="evu-cI-tjP"/>
+                    <constraint firstAttribute="trailing" secondItem="EUj-4j-MMg" secondAttribute="trailing" constant="5" id="fd5-F6-30c"/>
+                    <constraint firstItem="EUj-4j-MMg" firstAttribute="leading" secondItem="nEF-cP-yvj" secondAttribute="trailing" constant="10" id="gPW-WM-lWV"/>
+                    <constraint firstItem="nEF-cP-yvj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="gwb-wV-GrN"/>
+                    <constraint firstItem="icC-ob-hKL" firstAttribute="top" secondItem="nEF-cP-yvj" secondAttribute="bottom" constant="10" id="ihl-X6-nQQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="BrN-HN-RcK" id="FLg-4m-1Vd"/>
+                <outlet property="txtFieldInfo" destination="nEF-cP-yvj" id="oBF-xo-SSc"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="120.5"/>
+        </tableViewCell>
+    </objects>
+</document>

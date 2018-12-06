@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="76" id="KGk-i7-Jjw" customClass="SellingProgressCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1A-Db-RoV">
+                        <rect key="frame" x="16" y="15" width="282.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="edV-h0-yxc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfO-dJ-pbN">
+                        <rect key="frame" x="318.5" y="15" width="40" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="MgH-qB-zfG"/>
+                            <constraint firstAttribute="width" constant="40" id="Q0E-lG-WFL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="knl-5x-dhS" customClass="GradientProgressBar" customModule="GradientProgress">
+                        <rect key="frame" x="16" y="45" width="339" height="11"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Obw-Ap-07f"/>
+                        </constraints>
+                    </progressView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qEG-eO-11b">
+                        <rect key="frame" x="16" y="68.5" width="343" height="1"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1Qd-Vq-IaR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PfO-dJ-pbN" secondAttribute="trailing" constant="16" id="DPE-p6-YQX"/>
+                    <constraint firstItem="knl-5x-dhS" firstAttribute="top" secondItem="r1A-Db-RoV" secondAttribute="bottom" constant="10" id="LWM-PM-oIa"/>
+                    <constraint firstItem="r1A-Db-RoV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Qqf-MN-DSn"/>
+                    <constraint firstItem="PfO-dJ-pbN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="SNe-uG-3Wr"/>
+                    <constraint firstAttribute="trailing" secondItem="knl-5x-dhS" secondAttribute="trailing" constant="20" id="TGk-4c-TH9"/>
+                    <constraint firstItem="knl-5x-dhS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XbQ-o4-Elc"/>
+                    <constraint firstItem="qEG-eO-11b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YwI-WI-bsq"/>
+                    <constraint firstItem="PfO-dJ-pbN" firstAttribute="leading" secondItem="r1A-Db-RoV" secondAttribute="trailing" constant="20" id="aZh-L4-DEE"/>
+                    <constraint firstAttribute="trailing" secondItem="qEG-eO-11b" secondAttribute="trailing" constant="16" id="nu8-KP-6gl"/>
+                    <constraint firstItem="r1A-Db-RoV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="tFx-ob-HsJ"/>
+                    <constraint firstAttribute="bottom" secondItem="qEG-eO-11b" secondAttribute="bottom" id="xP3-rZ-X2T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblPercentage" destination="PfO-dJ-pbN" id="X2P-0t-Lbf"/>
+                <outlet property="lblProductName" destination="r1A-Db-RoV" id="WHC-LE-rw2"/>
+                <outlet property="progressBar" destination="knl-5x-dhS" id="7Lh-ne-JxG"/>
+            </connections>
+            <point key="canvasLocation" x="3.5" y="45"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AcceptRejectActivityTableCell" id="KGk-i7-Jjw" customClass="AcceptRejectActivityTableCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKg-9a-VnL">
+                        <rect key="frame" x="16" y="10" width="343" height="72"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dur-bw-eHu">
+                        <rect key="frame" x="16" y="10" width="343" height="72"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="erj-jF-e74">
+                                <rect key="frame" x="10" y="9" width="48" height="48"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Nl9-Zz-uOi"/>
+                                    <constraint firstAttribute="height" constant="48" id="XvA-kv-bo1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAD-q3-hcX" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="73" y="10" width="254" height="21"/>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <color key="textColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIV-ew-hhp" customClass="AVButton" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="73" y="36" width="75" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="VsG-9a-8Ru"/>
+                                    <constraint firstAttribute="width" constant="75" id="xrt-ic-pi1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                                <state key="normal" title="Accept"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonActive" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Accept"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="conrnerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="tapBtnAccept:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EvM-Oz-J2D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4Z-15-VFn">
+                                <rect key="frame" x="158" y="36" width="75" height="26"/>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.95686274509803915" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="i2O-ze-4xO"/>
+                                    <constraint firstAttribute="width" constant="75" id="u9b-nd-mdF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="13"/>
+                                <state key="normal" title="Reject">
+                                    <color key="titleColor" red="0.33333333333333331" green="0.40392156862745099" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBtnReject:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YRJ-Oz-7SD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="erj-jF-e74" firstAttribute="leading" secondItem="Dur-bw-eHu" secondAttribute="leading" constant="10" id="0gc-Lu-d9T"/>
+                            <constraint firstAttribute="trailing" secondItem="JAD-q3-hcX" secondAttribute="trailing" constant="16" id="8Bc-Uu-hYt"/>
+                            <constraint firstAttribute="bottom" secondItem="sIV-ew-hhp" secondAttribute="bottom" constant="10" id="CsH-dE-l3u"/>
+                            <constraint firstItem="B4Z-15-VFn" firstAttribute="leading" secondItem="sIV-ew-hhp" secondAttribute="trailing" constant="10" id="Soy-0j-wZi"/>
+                            <constraint firstItem="JAD-q3-hcX" firstAttribute="top" secondItem="Dur-bw-eHu" secondAttribute="top" constant="10" id="bES-0s-yd6"/>
+                            <constraint firstItem="erj-jF-e74" firstAttribute="top" secondItem="Dur-bw-eHu" secondAttribute="top" constant="9" id="l3l-7N-gN8"/>
+                            <constraint firstAttribute="bottom" secondItem="B4Z-15-VFn" secondAttribute="bottom" constant="10" id="mdT-jk-AUX"/>
+                            <constraint firstItem="JAD-q3-hcX" firstAttribute="leading" secondItem="erj-jF-e74" secondAttribute="trailing" constant="15" id="ncY-pZ-Egx"/>
+                            <constraint firstItem="sIV-ew-hhp" firstAttribute="leading" secondItem="erj-jF-e74" secondAttribute="trailing" constant="15" id="rvc-eD-emn"/>
+                            <constraint firstItem="sIV-ew-hhp" firstAttribute="top" secondItem="JAD-q3-hcX" secondAttribute="bottom" constant="5" id="tjB-Kp-iUP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dur-bw-eHu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="0hH-ll-WvS"/>
+                    <constraint firstAttribute="trailing" secondItem="qKg-9a-VnL" secondAttribute="trailing" constant="16" id="5jr-ew-KPh"/>
+                    <constraint firstItem="qKg-9a-VnL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FbC-Va-Wvl"/>
+                    <constraint firstItem="Dur-bw-eHu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Oip-qg-3jw"/>
+                    <constraint firstAttribute="bottom" secondItem="qKg-9a-VnL" secondAttribute="bottom" constant="4.5" id="RQR-VK-xrd"/>
+                    <constraint firstAttribute="trailing" secondItem="Dur-bw-eHu" secondAttribute="trailing" constant="16" id="eXs-HB-FJl"/>
+                    <constraint firstItem="qKg-9a-VnL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="uyw-HK-zK1"/>
+                    <constraint firstAttribute="bottom" secondItem="Dur-bw-eHu" secondAttribute="bottom" constant="4.5" id="xrC-Hv-vQe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnReject" destination="B4Z-15-VFn" id="S0h-Cf-nKw"/>
+                <outlet property="imgViewProduct" destination="erj-jF-e74" id="KhW-b9-shE"/>
+                <outlet property="lblDescription" destination="JAD-q3-hcX" id="QQQ-i0-bna"/>
+                <outlet property="viewContainer" destination="Dur-bw-eHu" id="a3N-s7-6aP"/>
+                <outlet property="viewShadow" destination="qKg-9a-VnL" id="cAi-pf-ToN"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="101.5"/>
+        </tableViewCell>
+    </objects>
+</document>

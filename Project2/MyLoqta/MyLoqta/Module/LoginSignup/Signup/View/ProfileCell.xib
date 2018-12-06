@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileCell" id="KGk-i7-Jjw" customClass="ProfileCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCU-WG-SLw">
+                        <rect key="frame" x="0.0" y="11" width="275" height="30"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="B7d-ST-HpE"/>
+                        </connections>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGe-wR-p03">
+                        <rect key="frame" x="0.0" y="52" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="zqS-r7-MmV"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMI-LI-Y1R">
+                        <rect key="frame" x="280" y="11" width="35" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="8xP-B2-x7I"/>
+                            <constraint firstAttribute="width" constant="35" id="DL4-Q7-ANh"/>
+                        </constraints>
+                        <state key="normal" image="eye"/>
+                        <state key="selected" image="fill1"/>
+                        <connections>
+                            <action selector="tapShowPassword:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aAz-16-5uV"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="uMI-LI-Y1R" secondAttribute="trailing" constant="5" id="0Vt-Nb-aSS"/>
+                    <constraint firstAttribute="bottom" secondItem="QGe-wR-p03" secondAttribute="bottom" id="5kQ-b9-etB"/>
+                    <constraint firstItem="NCU-WG-SLw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="8A6-WL-RYN"/>
+                    <constraint firstItem="uMI-LI-Y1R" firstAttribute="leading" secondItem="NCU-WG-SLw" secondAttribute="trailing" constant="5" id="9Ct-4v-aty"/>
+                    <constraint firstItem="uMI-LI-Y1R" firstAttribute="centerY" secondItem="NCU-WG-SLw" secondAttribute="centerY" id="bZY-Mm-Lmt"/>
+                    <constraint firstItem="NCU-WG-SLw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oBh-st-RVG"/>
+                    <constraint firstItem="QGe-wR-p03" firstAttribute="top" secondItem="NCU-WG-SLw" secondAttribute="bottom" constant="11" id="x2b-iI-Nwo"/>
+                    <constraint firstItem="QGe-wR-p03" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xH3-N1-wx2"/>
+                    <constraint firstAttribute="trailing" secondItem="QGe-wR-p03" secondAttribute="trailing" id="yxq-5B-mIK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnEye" destination="uMI-LI-Y1R" id="eGK-qP-ZR6"/>
+                <outlet property="txtFieldProfile" destination="NCU-WG-SLw" id="GSN-ir-91U"/>
+                <outlet property="viewBottomLine" destination="QGe-wR-p03" id="T6f-Mq-Tj9"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="eye" width="25" height="15"/>
+        <image name="fill1" width="25" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="SF-Pro-Text-Semibold.otf">
+            <string>SFProText-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="OrderTotalPriceCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="324" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7PE-67-hJb">
+                        <rect key="frame" x="242" y="45" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="5gs-tX-GQU"/>
+                            <constraint firstAttribute="width" constant="100" id="5uY-d2-sDz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN5-IE-MMp" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="344" y="42" width="15" height="12"/>
+                        <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="NO"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="KD"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="All total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zde-uM-FH6">
+                        <rect key="frame" x="16" y="45" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="3tv-0P-stx"/>
+                            <constraint firstAttribute="height" constant="20" id="mrF-Qf-zbQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Semibold" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="324" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="its-xE-YWb">
+                        <rect key="frame" x="242" y="10" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="9qZ-JY-vNS"/>
+                            <constraint firstAttribute="height" constant="20" id="kXz-JJ-tCb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="1 item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghb-ZR-u79">
+                        <rect key="frame" x="16" y="10" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3Vg-6a-tNP"/>
+                            <constraint firstAttribute="width" constant="100" id="rMt-Wl-2D8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgI-ZY-BVX" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="344" y="10" width="15" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="bCQ-es-xtL"/>
+                            <constraint firstAttribute="width" constant="15" id="pvd-pG-d9p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="KD"/>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="NO"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zde-uM-FH6" firstAttribute="top" secondItem="its-xE-YWb" secondAttribute="bottom" constant="15" id="2vY-JW-jHu"/>
+                    <constraint firstItem="Ghb-ZR-u79" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="7QV-dc-1y7"/>
+                    <constraint firstItem="Ghb-ZR-u79" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="8Ry-wP-RGl"/>
+                    <constraint firstItem="zde-uM-FH6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="FaM-Jk-ceB"/>
+                    <constraint firstItem="MgI-ZY-BVX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="PqJ-l8-GWz"/>
+                    <constraint firstItem="sN5-IE-MMp" firstAttribute="top" secondItem="MgI-ZY-BVX" secondAttribute="bottom" constant="20" id="SdM-Z7-rBY"/>
+                    <constraint firstItem="its-xE-YWb" firstAttribute="centerY" secondItem="Ghb-ZR-u79" secondAttribute="centerY" id="Stt-hf-u8v"/>
+                    <constraint firstItem="7PE-67-hJb" firstAttribute="centerY" secondItem="zde-uM-FH6" secondAttribute="centerY" id="agd-ag-WEj"/>
+                    <constraint firstAttribute="trailing" secondItem="sN5-IE-MMp" secondAttribute="trailing" constant="16" id="cL2-Hp-abS"/>
+                    <constraint firstAttribute="trailing" secondItem="MgI-ZY-BVX" secondAttribute="trailing" constant="16" id="eIE-OT-6Gs"/>
+                    <constraint firstItem="MgI-ZY-BVX" firstAttribute="leading" secondItem="its-xE-YWb" secondAttribute="trailing" constant="2" id="fo9-9K-Arh"/>
+                    <constraint firstItem="sN5-IE-MMp" firstAttribute="leading" secondItem="7PE-67-hJb" secondAttribute="trailing" constant="2" id="w6V-v6-eSb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblProductCount" destination="Ghb-ZR-u79" id="tGU-3q-WlM"/>
+                <outlet property="lblProductPrice" destination="its-xE-YWb" id="IHx-TM-Rrg"/>
+                <outlet property="lblTotalAmount" destination="7PE-67-hJb" id="r87-KN-D1h"/>
+            </connections>
+            <point key="canvasLocation" x="37.5" y="97"/>
+        </tableViewCell>
+    </objects>
+</document>

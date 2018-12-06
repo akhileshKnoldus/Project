@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FeaturedShopCollectionCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VhM-ev-5Km">
+                        <rect key="frame" x="5" y="5" width="240" height="100"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bFJ-5p-aTq">
+                        <rect key="frame" x="5" y="5" width="240" height="100"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AYe-04-0WK">
+                                <rect key="frame" x="15" y="15" width="70" height="70"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Jpi-zS-Dn8"/>
+                                    <constraint firstAttribute="width" constant="70" id="gF7-RY-SX8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7MAGIC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qX-O2-qmW" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="105" y="16" width="68.5" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="107.5" id="Hyg-5l-09S"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="cI0-Sk-eLB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                <color key="textColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_blue" translatesAutoresizingMaskIntoConstraints="NO" id="e0B-tE-DRx">
+                                <rect key="frame" x="180" y="21" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="ARQ-zk-wSJ"/>
+                                    <constraint firstAttribute="width" constant="15" id="gsq-9w-o9w"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="546 Products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEP-rZ-NxS" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="105" y="43" width="127" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="Lah-Ec-xtb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="15"/>
+                                <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="dynamicFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star4.5" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-JN-vBB">
+                                <rect key="frame" x="105" y="69" width="80" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="GTf-bz-zdr"/>
+                                    <constraint firstAttribute="width" constant="80" id="tTL-yd-Exw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(25)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6b-HZ-xhr">
+                                <rect key="frame" x="190" y="67" width="42" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="7mU-cQ-OQQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                                <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CEP-rZ-NxS" firstAttribute="leading" secondItem="AYe-04-0WK" secondAttribute="trailing" constant="20" id="4rv-uo-PYu"/>
+                            <constraint firstItem="7qX-O2-qmW" firstAttribute="leading" secondItem="AYe-04-0WK" secondAttribute="trailing" constant="20" id="94q-Mt-NgE"/>
+                            <constraint firstItem="CEP-rZ-NxS" firstAttribute="top" secondItem="7qX-O2-qmW" secondAttribute="bottom" constant="3" id="Htk-94-Zzh"/>
+                            <constraint firstItem="m6b-HZ-xhr" firstAttribute="top" secondItem="CEP-rZ-NxS" secondAttribute="bottom" constant="4" id="QGJ-kG-zNN"/>
+                            <constraint firstItem="m6b-HZ-xhr" firstAttribute="leading" secondItem="PmS-JN-vBB" secondAttribute="trailing" constant="5" id="XXo-Z3-nvw"/>
+                            <constraint firstItem="e0B-tE-DRx" firstAttribute="top" secondItem="bFJ-5p-aTq" secondAttribute="top" constant="21" id="cOA-eG-RHM"/>
+                            <constraint firstItem="AYe-04-0WK" firstAttribute="leading" secondItem="bFJ-5p-aTq" secondAttribute="leading" constant="15" id="gT7-b9-9rr"/>
+                            <constraint firstItem="PmS-JN-vBB" firstAttribute="top" secondItem="CEP-rZ-NxS" secondAttribute="bottom" constant="6" id="hGb-KC-KRI"/>
+                            <constraint firstItem="e0B-tE-DRx" firstAttribute="leading" secondItem="7qX-O2-qmW" secondAttribute="trailing" constant="6.5" id="hJK-Mq-b35"/>
+                            <constraint firstItem="PmS-JN-vBB" firstAttribute="leading" secondItem="AYe-04-0WK" secondAttribute="trailing" constant="20" id="jTR-YI-LuI"/>
+                            <constraint firstAttribute="trailing" secondItem="m6b-HZ-xhr" secondAttribute="trailing" constant="8" id="qEP-3C-0Kd"/>
+                            <constraint firstItem="AYe-04-0WK" firstAttribute="centerY" secondItem="bFJ-5p-aTq" secondAttribute="centerY" id="swi-Z9-4Gd"/>
+                            <constraint firstAttribute="trailing" secondItem="CEP-rZ-NxS" secondAttribute="trailing" constant="8" id="t7T-ex-El1"/>
+                            <constraint firstItem="7qX-O2-qmW" firstAttribute="top" secondItem="bFJ-5p-aTq" secondAttribute="top" constant="16" id="tc1-N3-8l5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bFJ-5p-aTq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="NjY-gT-dZf"/>
+                <constraint firstItem="VhM-ev-5Km" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="YNS-1K-lbg"/>
+                <constraint firstItem="bFJ-5p-aTq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="a8F-mP-uhY"/>
+                <constraint firstAttribute="trailing" secondItem="bFJ-5p-aTq" secondAttribute="trailing" constant="5" id="bjL-t1-LBK"/>
+                <constraint firstItem="VhM-ev-5Km" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="d1T-wd-1WL"/>
+                <constraint firstAttribute="trailing" secondItem="VhM-ev-5Km" secondAttribute="trailing" constant="5" id="i93-6q-vMH"/>
+                <constraint firstAttribute="bottom" secondItem="VhM-ev-5Km" secondAttribute="bottom" constant="5" id="sKq-kG-SxW"/>
+                <constraint firstAttribute="bottom" secondItem="bFJ-5p-aTq" secondAttribute="bottom" constant="5" id="vqK-mK-dph"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imgViewShop" destination="AYe-04-0WK" id="jEv-us-sbX"/>
+                <outlet property="viewContainer" destination="bFJ-5p-aTq" id="Ctx-IK-WyH"/>
+                <outlet property="viewShadow" destination="VhM-ev-5Km" id="cKy-8h-I6y"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="check_blue" width="15" height="15"/>
+        <image name="star4.5" width="213" height="30"/>
+    </resources>
+</document>

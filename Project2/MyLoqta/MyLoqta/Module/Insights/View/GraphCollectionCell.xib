@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GraphCollectionCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="125"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="125"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1BI-gy-KyT">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="125"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kbQ-LR-ooc" customClass="DottedVertical" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="2" height="123"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="jEn-Lf-rYh"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                        <color key="value" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="0.41248394691780821" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jun 12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KhV-sQ-pOk">
+                                <rect key="frame" x="4" y="0.0" width="42" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="jXL-4Y-iaj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="12"/>
+                                <color key="textColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tfU-vo-ATv">
+                                <rect key="frame" x="0.0" y="124" width="50" height="1"/>
+                                <color key="backgroundColor" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="0.40068493150684931" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="DfA-NL-TXK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A0Q-Aa-z5s" customClass="DottedVertical" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="48" y="0.0" width="2" height="123"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="0Ay-mB-C16"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                        <color key="value" red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="0.41248394691780821" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9tq-d7-Qu0" customClass="AVView" customModule="MyLoqta" customModuleProvider="target">
+                                <rect key="frame" x="12" y="25" width="25" height="100"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="7HF-hS-Pmu"/>
+                                    <constraint firstAttribute="height" constant="100" id="nfW-KV-ZoI"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tfU-vo-ATv" secondAttribute="bottom" id="DhS-bc-p2N"/>
+                            <constraint firstAttribute="trailing" secondItem="tfU-vo-ATv" secondAttribute="trailing" id="I4M-Ri-5Qh"/>
+                            <constraint firstItem="KhV-sQ-pOk" firstAttribute="top" secondItem="1BI-gy-KyT" secondAttribute="top" id="Iul-Kh-gcC"/>
+                            <constraint firstItem="9tq-d7-Qu0" firstAttribute="centerX" secondItem="1BI-gy-KyT" secondAttribute="centerX" id="Qda-jP-7C8"/>
+                            <constraint firstItem="kbQ-LR-ooc" firstAttribute="top" secondItem="1BI-gy-KyT" secondAttribute="top" id="Soe-zj-KSo"/>
+                            <constraint firstItem="tfU-vo-ATv" firstAttribute="leading" secondItem="1BI-gy-KyT" secondAttribute="leading" id="VsY-r8-t8Z"/>
+                            <constraint firstItem="tfU-vo-ATv" firstAttribute="top" secondItem="A0Q-Aa-z5s" secondAttribute="bottom" constant="1" id="ZCl-wa-mxC"/>
+                            <constraint firstItem="A0Q-Aa-z5s" firstAttribute="leading" secondItem="KhV-sQ-pOk" secondAttribute="trailing" constant="2" id="ccX-pT-tZo"/>
+                            <constraint firstItem="KhV-sQ-pOk" firstAttribute="leading" secondItem="kbQ-LR-ooc" secondAttribute="trailing" constant="2" id="ewn-8h-zmL"/>
+                            <constraint firstAttribute="trailing" secondItem="A0Q-Aa-z5s" secondAttribute="trailing" id="lPU-67-9Gp"/>
+                            <constraint firstAttribute="bottom" secondItem="9tq-d7-Qu0" secondAttribute="bottom" id="nS4-b8-xPG"/>
+                            <constraint firstItem="A0Q-Aa-z5s" firstAttribute="top" secondItem="1BI-gy-KyT" secondAttribute="top" id="w9t-1C-wn7"/>
+                            <constraint firstItem="tfU-vo-ATv" firstAttribute="top" secondItem="kbQ-LR-ooc" secondAttribute="bottom" constant="1" id="xtg-ql-YIA"/>
+                            <constraint firstItem="kbQ-LR-ooc" firstAttribute="leading" secondItem="1BI-gy-KyT" secondAttribute="leading" id="yD4-RN-1ft"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="dotColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1BI-gy-KyT" secondAttribute="trailing" id="G55-tH-no6"/>
+                <constraint firstItem="1BI-gy-KyT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Lga-nw-gH6"/>
+                <constraint firstItem="1BI-gy-KyT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WRK-0a-MaI"/>
+                <constraint firstAttribute="bottom" secondItem="1BI-gy-KyT" secondAttribute="bottom" id="gfa-1t-4df"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="49" height="170"/>
+            <connections>
+                <outlet property="constraintViewGraphHeight" destination="nfW-KV-ZoI" id="IT9-AW-dFW"/>
+                <outlet property="lblDate" destination="KhV-sQ-pOk" id="iuI-fc-tTi"/>
+                <outlet property="viewDashedLeft" destination="kbQ-LR-ooc" id="jsV-8t-ga0"/>
+                <outlet property="viewDashesRight" destination="A0Q-Aa-z5s" id="Gb2-MV-mj7"/>
+                <outlet property="viewGraph" destination="9tq-d7-Qu0" id="Wxi-OJ-AeQ"/>
+            </connections>
+            <point key="canvasLocation" x="-48" y="101"/>
+        </collectionViewCell>
+    </objects>
+</document>

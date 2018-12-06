@@ -1,0 +1,562 @@
+/* n
+  Localizable.strings
+  MyLoqta
+
+  Created by Ashish Chauhan on 04/07/18.
+  Copyright © 2018 AppVenturez. All rights reserved.
+*/
+
+//MARK: - AppName
+"MyLoqta" = "MyLoqta";
+
+//MARK: - Tutorial Screen
+
+
+//MARK: - MyProfileEmpty Screen
+"Sign in" = "Sign in";
+"Unlock the full experience" = "Unlock the full\n experience";
+"Sign in to save your favourite items and see personalised recommendations" = "Sign in to save your favourite items\n and see personalised recommendations";
+"Create account" = "Create account";
+"Google" = "Google";
+"Facebook" = "Facebook";
+
+//MARK: - SignIn Screen
+"Email" = "Email";
+"Password" = "Password";
+"Forgot password?" = "Forgot password?";
+
+//MARK: - BecomeSeller Screen
+"Start earning money" = "Start earning money";
+"Easiest way to start selling online way to start selling online" = "Easiest way to start selling online way to start selling online";
+"Add to sell in a few steps" = "Add to sell in a few steps";
+"Get paid quickly and safely" = "Get paid quickly and safely";
+"We deliver it to new home" = "We deliver it to new home";
+"Become a seller" = "Become a seller";
+
+//MARK: - SelectSellerType Screen
+"Select a seller type" = "Select a seller type";
+"The difference between individual and business accounts." = "The difference between individual and business accounts.";
+"Individual" = "Individual";
+"You want to sell some extra items" = "You want to sell some extra items";
+"Business" = "Business";
+"Selling is one of your main income" = "Selling is one of your main income";
+
+//MARK: - CreateProfile Screen
+"Create your profile" = "Create your profile";
+"First name" = "First name";
+"Last name" = "Last name";
+"Username" = "Username";
+"Email" = "Email";
+"Password" = "Password";
+"Next" = "Next";
+
+//MARK: - Onboarding Screen
+"Get Started" = "Get Started";
+"Skip" = "Skip";
+"Enjoy Shopping" = "Enjoy Shopping";
+"Explore a ton of products and find a suitable one" = "Explore a ton of products and find a suitable one";
+"Sell your products" = "Sell your products";
+"Start selling and increase your revenue in an easiest way" = "Start selling and increase your revenue in an easiest way";
+"Fast home delivery" = "Fast home delivery";
+"Within our dedicated delivery you’ll get your items fastly" = "Within our dedicated delivery you’ll get your items fastly";
+
+//MARK: - BusinessDocuments Screen
+"Business account" = "Business account";
+"Upload your documents" = "Upload your documents";
+"To continue, please, provide the photos of Commercial License and your Civil ID." = "To continue, please, provide the photos of Commercial License and your Civil ID.";
+"Сommercial License" = "Сommercial License";
+"Photos successfully uploaded" = "Photos successfully uploaded";
+"Owner Civil ID Front" = "Owner Civil ID Front";
+"Owner Civil ID Back" = "Owner Civil ID Back";
+
+//MARK: - IndividualDocuments Screen
+"Individual account" = "Individual account";
+"Take the photos of your documents" = "Take the photos of your documents";
+"To continue, please, upload the photos of your Civil ID" = "To continue, please, upload the photos of your Civil ID";
+
+//MARK: - ResetPassword Screen
+"Reset password" = "Reset password";
+"Enter the email address and we’ll send you the link to reset your password." = "Enter the email address and we’ll send you the link to reset your password.";
+"Reset" = "Reset";
+"A reset password link has been sent to your registered email id." = "A reset password link has been sent to your registered email id.";
+
+//MARK: - BankAccount Screen
+"IBAN" = "IBAN";
+"Bank name" = "Bank name";
+"Great! \n We’re almost done" = "Great! \n We’re almost done";
+"Enter your bank account information to be able to receive money" = "Enter your bank account information to be able to receive money";
+"Take me to the last step" = "Take me to the last step";
+"Choose your bank" = "Choose your bank";
+
+//MARK: - TermsAndConditions Screen
+"Accept" = "Accept";
+
+//MARK: - Profile Screen
+"Reviews about me" = "Reviews about me";
+"My likes" = "My likes";
+"followers" = "followers";
+"following" = "following";
+"likes" = "likes";
+"Track order" = "Track order";
+"Select Image" = "Select Image";
+"Add item to sale" = "Add item to sale";
+"Drafts" = "Drafts";
+"Orders" = "Orders";
+"products" = "products";
+"QTY" = "QTY";
+
+//MARK: - OTP Screen
+"Didn't receive code?" = "Didn't receive code?";
+"Re-send" = "Re-send";
+"We’ve sent you the code to verify your phone number" = "We’ve sent you the code to verify your phone number";
+"Verify phone" = "Verify phone";
+"Sent to " = "Sent to ";
+"Choose country code" = "Choose country code";
+"New otp has been sent to your number" = "New otp has been sent to your number";
+
+//MARK: - PrepareSellerProfile Screen
+"Prepare your account" = "Prepare \nyour account";
+"Prepare your store" = "Prepare \nyour store";
+"Filled profiles helps to increase to sale items faster" = "Filled profiles helps to increase to sale items faster";
+"Store Name" = "Store Name";
+"Few words about you" = "Few words about you";
+"About store" = "About store";
+
+//MARK: - Settings Screen
+"Phone" = "Phone";
+"Edit profile" = "Edit profile";
+"Settings" = "Settings";
+"My reviews" = "My reviews";
+"Shipping address" = "Shipping address";
+"Notifications" = "Notifications";
+"Language" = "Language";
+"Help" = "Help";
+"FAQ" = "FAQ";
+"About us" = "About us";
+"Log out" = "Log out";
+"Account" = "Account";
+"More" = "More";
+"Privacy policy" = "Privacy policy";
+
+//MARK: - Notification Screen
+"Push notifications" = "Push notifications";
+"Notify me with updates to items I’m interested in" = "Notify me with updates to items I’m interested in";
+"Notify me with updates on items I’ve purchased" = "Notify me with updates on items I’ve purchased";
+"Notify me with updates about an item I’ve sold" = "Notify me with updates about an item I’ve sold";
+"Notify me with updates about an item statuses" = "Notify me with updates about an item statuses";
+"Notify me when I receive a message from user" = "Notify me when I receive a message from user";
+"Buying" = "Buying";
+"Selling" = "Selling";
+"General" = "General";
+
+//MARK:- Activity Screen
+"Action needed" = "Action needed";
+"Other" = "Other";
+
+//MARK: - Validations
+"Please enter first name" = "Please enter first name";
+"Please enter last name" = "Please enter last name";
+"Please enter username" = "Please enter username";
+"Please enter email" = "Please enter email";
+"Please enter password" = "Please enter password";
+"Please enter valid email" = "Please enter valid email";
+"Please enter phone number" = "Please enter phone number";
+"Please enter valid phone number" = "Please enter valid phone number";
+"The first name cannot contain more than 30 characters." = "The first name cannot contain more than 30 characters.";
+"The last name cannot contain more than 40 characters." = "The last name cannot contain more than 40 characters.";
+"The username cannot contain more than 32 characters." = "The username cannot contain more than 32 characters.";
+"Please enter a valid email" = "Please enter a valid email.";
+"The password should contain minimum 6 and maximum 32 characters." = "The password should contain minimum 6 and maximum 32 characters.";
+"The first name should contain atleast 2 characters." = "The first name should contain atleast 2 characters.";
+"The last name should contain atleast 2 characters." = "The last name should contain atleast 2 characters.";
+"The username should contain atleast 5 characters." = "The username should contain atleast 5 characters.";
+"Image is uploading" = "Image is uploading";
+
+//MARK: - PhoneNumber Screen
+"Your phone number" = "Your phone number";
+"Please, enter your phone number." = "Please, enter your phone number.";
+
+//MARK: - AlertMessages
+"Choose an option" = "Choose an option";
+"Camera" = "Camera";
+"Gallery" = "Gallery";
+"Cancel" = "Cancel";
+"Warning" = "Warning";
+"Camera is not available" = "Camera is not available";
+"Ok" = "Ok";
+"Are you sure, you want to logout?" = "Are you sure, you want to logout?";
+"Verify" = "Verify";
+"This OTP is not valid." = "This OTP is not valid.";
+
+//MARK: - PrepareStoreValidations
+"Please enter store name" = "Please enter store name";
+"Please enter description" = "Please enter description";
+"Please upload cover image" = "Please upload cover image";
+"Please upload profile image" = "Please upload profile image";
+
+//MARK: - BankScreenValidations
+"Please select your bank" = "Please select your bank";
+"Please enter your IBAN Number" = "Please enter your IBAN Number";
+
+//MARK: - EditProfile Screen
+"Done" = "Done";
+"Update" = "Update";
+"Update phone" = "Update phone";
+"Profile updated successfully." = "Profile updated successfully.";
+
+//MARK: - ProductsList Screen
+"ON THE WAY" = "ON THE WAY";
+"Order ID:" = "Order ID:";
+"Condition:" = "Condition:";
+"Delivery:" = "Delivery:";
+"QTY:" = "QTY:";
+"KD" = "KD";
+"Available:" = "Available:";
+"NEW" = "NEW";
+"Total" = "Total";
+"Item delivered" = "Item delivered";
+"Driver" = "Driver";
+"Call to driver" = "Call to driver";
+"REJECTED" = "REJECTED";
+"RETURNED" = "RETURNED";
+"NEW ORDER" = "NEW ORDER";
+"New" = "New";
+"Used" = "Used";
+"Item" = "Item";
+"Moderator" = "Moderator";
+"No data available!!!" = "No data available!!!";
+
+//MARK: - Explore Screen
+"Search" = "Search";
+"Popular" = "Popular";
+"On sale" = "On sale";
+"item found" = "item found";
+"items found" = "items found";
+"Popular Shops" = "Popular Shops";
+
+//MARK: - AddItem Screen
+"Add item" = "Add item";
+"Edit item" = "Edit item";
+"Save" = "Save";
+"Category" = "Category";
+"Description" = "Description";
+"Location" = "Location";
+"Quantity" = "Quantity";
+"You can upload maximum 10 images" = "You can upload maximum 10 images";
+"Add to sale" = "Add to sale";
+"Sale price (with 10% fee)" = "Sale price (with 10% fee)";
+"Sale price (with " = "Sale price (with ";
+" fee)" = " fee)";
+
+//MARK: - ActiveProductDetail Screen
+"Publish again" = "Publish again";
+"Recent" = "Recent";
+"ACTIVE" = "ACTIVE";
+"Published:" = "Published:";
+"Send" = "Send";
+"Deactivate product" = "Deactivate product";
+"Questions" = "Questions";
+"Item deactivated successfully." = "Item deactivated successfully.";
+"Are you sure, you want to deactivate this product?" = "Are you sure you want to deactivate this product?";
+
+//MARK: - ReviewProductDetail Screen
+"This item will be listed after review" = "This item will be listed after review";
+
+
+//MARK: - SellerProfile Screen
+"Info" = "Info";
+"Reviews" = "Reviews";
+"like" = "like";
+"Products" = "Products";
+"product" = "product";
+"items sold" = "items sold";
+"Item reviews" = "Item reviews";
+"items" = "items";
+"item" = "item";
+"Verified" = "Verified";
+"Not Verified" = "Not Verified";
+"Full name" = "Full name";
+"Store address" = "Store address";
+"Add new shipping address" = "Add new shipping address";
+"Share" = "Share";
+"Report this image" = "Report this image";
+"Report this item" = "Report this item";
+"Items" = "Items";
+"Following" = "Following";
+"Follow" = "Follow";
+"Report" = "Report";
+
+//MARK: - ShippingType Screen
+"Buyer will pay" = "Buyer will pay";
+"I will pay" = "I will pay";
+"Self pickup" = "Self pickup";
+"I will deliver" = "I will deliver";
+
+// MARK: - DraftProductDetail Screen
+"DRAFT" = "DRAFT";
+"Publish" = "Publish";
+"Shipping address" = "Shipping address";
+"Created:" = "Created:";
+"On review" = "On review";
+"Rejected" = "Rejected";
+"Select condition" = "Select condition";
+"Item is published successfully" = "Item is published successfully";
+"Please fill complete details of item" = "Please fill complete details of item";
+
+//MARK: - AddAddress Screen
+"Title" = "Title";
+"City" = "City";
+"Country" = "Country";
+"Block No." = "Block No.";
+"Street" = "Street";
+"Avenue No. (optional)" = "Avenue No. (optional)";
+"Building No." = "Building No.";
+"PACI No. (optional)" = "PACI No. (optional)";
+"Please enter title" = "Please enter title";
+"Please select your country" = "Please select your country";
+"Please select your city" = "Please select your city";
+"Please enter Block No." = "Please enter Block No.";
+"Please enter Street" = "Please enter Street";
+"Please enter Building No." = "Please enter Building No.";
+"Edit" = "Edit";
+"Delete" = "Delete";
+"Kuwait" = "Kuwait";
+"Select country" = "Select country";
+"Select city" = "Select city";
+"Are you sure, you want to delete this address?" = "Are you sure, you want to delete this address?";
+
+//MARK: - BuyerProductDetail Screen
+"Buy now" = "Buy now";
+"Add to cart" = "Add to cart";
+"from " = "from ";
+"More from the seller" = "More from the seller";
+"Related items" = "Related items";
+"Item is added to cart successfully" = "Item is added to cart successfully";
+"Cart contains items from a different seller. Empty the cart and add this item?" = "Cart contains items from a different seller. Empty the cart and add this item?";
+
+//MARK: - EditSeller Screen
+"Name" = "Name";
+"Edit account" = "Edit account";
+"Edit store" = "Edit store";
+"Store name" = "Store name";
+"Please enter something about your store" = "Please enter something about your store";
+"Please enter few words about yourself" = "Please enter few words about yourself";
+"Address" = "Address";
+
+//MARK:- Checkout Screen
+"Checkout" = "Checkout";
+"Confirm and pay" = "Confirm and pay";
+"Delivery" = "Delivery";
+"Home Delivery" = "Home Delivery";
+"Payment methods" = "Payment methods";
+"Credit card" = "Credit card";
+"Debit card" = "Debit card";
+"Card number" = "Card number";
+"MM/YY" = "MM/YY";
+"CVC" = "CVC";
+"Order is placed successfully" = "Order is placed successfully";
+
+//MARK: - MyCart Screen
+"My Cart" = "My Cart";
+"Proceed to checkout" = "Proceed to checkout";
+"Are you sure, you want to remove this item from your cart?" = "Are you sure, you want to remove this item from your cart?";
+"Yes" = "Yes";
+
+//MARK: - SellerMore Screen
+"How customers see my profile?" = "How customers see my profile?";
+"Sold" = "Sold";
+"Coupons" = "Coupons";
+"Withdraw" = "Withdraw";
+"Promote your store" = "Promote your store";
+"COMPLETED" = "COMPLETED";
+"Invite & earn" = "Invite & earn";
+
+//MARK: - SoldItems Screen
+"Sold items" = "Sold items";
+
+//MARK: - OrderCompletion Screen
+"Thank you for your order!" = "Thank you for your order!";
+"Your item will be soon delivered :)" = "Your item will be soon delivered :)";
+"Continue shopping" = "Continue shopping";
+"To my orders" = "To my orders";
+
+// MARK: - Order Detail Screen
+"Order date" = "Order date";
+"Order ID" = "Order ID";
+"Color" = "Color";
+"Сondition" = "Сondition";
+"Your item will be soon delivered" = "Your item will be soon delivered";
+"QTY" = "QTY";
+"Shipping" = "Shipping";
+"Payment method" = "Payment method";
+"item" = "item";
+"All total" = "All total";
+"Seller" = "Seller";
+"Resell" = "Resell";
+
+
+// MARK: - Search Screen
+"Recent" = "Recent";
+"Saved" = "Saved";
+"Product" = "Product";
+"Store" = "Store";
+"Tag" = "Tag";
+"Try shoes" = "Try shoes";
+"Recently viewed" = "Recently viewed";
+"Order details" = "Order details";
+"Price high to low" = "Price high to low";
+"Clear sorting" = "Clear sorting";
+"Price low to high" = "Price low to high";
+
+//MARK: - DeliveryCompletion Screen
+"Congratulations!" = "Congratulations!";
+"Leave feedback" = "Leave feedback";
+
+//MARK: - BuyerOrderList Screen
+"My orders" = "My orders";
+"Order date:" = "Order date:";
+"Home delivery" = "Home delivery";
+
+//MARK: - Home Screen
+"For you" = "For you";
+
+//MARK: - RejectProduct Screen
+"Select the reason of returning" = "Select the reason of returning";
+"Select the reason" = "Select the reason";
+"Tell a few words about item" = "Tell a few words about item";
+"Select the reason of rejection" = "Select the reason of returning";
+
+//MARK: - Buyer Reviews
+"Reviews about me" = "Reviews about me";
+
+//MARK: - Help Screen
+"Do you have a question?" = "Do you have a question?";
+"Feel free to contact us" = "Feel free to contact us";
+"Make a call" = "Make a call";
+"Send a message" = "Send a message";
+
+//MARK: - MessageAdmin Screen
+"Your message" = "Your message";
+"Select subject" = "Select subject";
+"Please select subject" = "Please select subject";
+"Please enter your message" = "Please enter your message";
+"Email has been sent" = "Email has been sent";
+
+//MARK: - Feedback Screen
+"Please,leave feedback" = "Please,leave feedback";
+"How would you rate this item?" = "How would you rate this item?";
+"Few words about item" = "Few words about item";
+"Delivery speed" = "Delivery speed";
+"Communication with seller" = "Communication with seller";
+"Does item match the pictures, description?" = "Does item match the pictures, description?";
+"How would you rate this customer?" = "How would you rate this customer?";
+"Few words about customer" = "Few words about customer";
+"Communication with buyer" = "Communication with buyer";
+"Please rate the item" = "Please rate the item";
+"Please write few words about item" = "Please write few words about item";
+"Please rate the delivery speed" = "Please rate the delivery speed";
+"Please rate seller communication" = "Please rate seller communication";
+"Please rate the item quality" = "Please rate the item quality";
+"Please rate the customer" = "Please rate the customer";
+"Please write few words about customer" = "Please write few words about customer";
+"Please rate buyer communication" = "Please rate buyer communication";
+"Your feedback is submitted successfully." = "Your feedback is submitted successfully.";
+
+//MARK: - Reviews Screen
+"My reviews" = "My reviews";
+"Review to" = "Review to";
+"Review by" = "Review by";
+"Free delivery" = "Free delivery";
+//MARK: - Insight Screen
+"Insights" = "Insights";
+"Last week" = "Last week";
+"Last month" = "Last month";
+"Last year" = "Last year";
+"All categories" = "All categories";
+"Select category" = "Select category";
+"My store statistic" = "My store statistic";
+"Top searches" = "Top searches";
+"Top selling products" = "Top selling products";
+"Revenue" = "Revenue";
+"Active listing" = "Active listing";
+"from last week" = "from last week";
+"from last month" = "from last month";
+"from last year" = "from last year";
+
+//MARK: - ProductStats Screen
+"Statistic" = "Statistic";
+"Views" = "Views";
+"views" = "views";
+"Likes" = "Likes";
+"Average per day" = "Average per day";
+"Average per month" = "Average per month";
+
+//MARK: - Filter Screen
+"The average price 323 KD" = "The average price 323 KD";
+
+//MARK: - Withdraw Screen
+"Current Wallet Balance" = "Current Wallet Balance";
+"Amount" = "Amount";
+"Status" = "Status";
+"Type" = "Type";
+"Withdrawal Amount Requested: " = "Withdrawal Amount Requested: ";
+"Pending" = "Pending";
+"Processing" = "Processing";
+"Success" = "Success";
+
+//MARK: - WithdrawPopup
+"Choose an option to withdraw" = "Choose an option to withdraw";
+"Cheque" = "Cheque";
+"Wire Transfer" = "Wire Transfer";
+"Please enter amount to withdrawal (KD)" = "Please enter amount to withdrawal (KD)";
+"Note: You will be charged 1 KD as transaction fee." = "Note: You will be charged 1 KD as transaction fee.";
+"Are you sure you want to withdraw?" = "Are you sure you want to withdraw?";
+"Yes, I'm" = "Yes, I'm";
+"Minimum amount to withdraw is 10 KD." = "Minimum amount to withdraw is 10 KD.";
+"Withdrawal amount can not be greater than your wallet balance." = "Withdrawal amount can not be greater than your wallet balance.";
+
+//MARK: - BankInfo Screen
+"Your bank account info" = "Your bank account info";
+
+//MARK: - OrderAccept/Reject Screen
+"After accepting you cannot return item. If you rejecting item you will be charged for returning it." = "After accepting you cannot return item. If you rejecting item you will be charged for returning it.";
+"Your item" = "Your item";
+"Didn’t receive?" = "Didn’t receive?";
+"Please, confirm your item" = "Please, confirm your item";
+
+//MARK: - WithdrawSuccess Screen
+"Your Withdrawal Request has been processed. Amount will be tranferred in 2-3 Business days" = "Your Withdrawal Request has been processed. Amount will be tranferred in 2-3 Business days";
+
+//MARK: - Referral Screen
+"Invite your Friends to MyLoqta" = "Invite your Friends to MyLoqta";
+"* T&C Apply" = "* T&C Apply";
+"GET 1 KD*" = "GET 1 KD*";
+"Invite Link:" = "Invite Link:";
+"Invite and Earn" = "Invite and Earn";
+"Share Link" = "Share Link";
+
+
+//MARK: - Map Screen
+"Delivery time:" = "Delivery time:";
+
+//MARK: - Notification Screen
+"Your order for item" = "Your order for item";
+"has been placed successfully." = "has been placed successfully.";
+"Customer wants to buy your item" = "Customer wants to buy your item";
+"Your item" = "Your item";
+"has been sold to" = "has been sold to";
+"commented on" = "commented on";
+"Reply" = "Reply";
+"changed to:" = "changed to:";
+"has been accepted by the seller." = "has been accepted by the seller.";
+"has been rejected by the seller." = "has been rejected by the seller.";
+"has been rejected by the admin." = "has been rejected by the admin.";
+"has been accepted by the seller and it is ready for pickup." = "has been accepted by the seller and it is ready for pickup.";
+"is assigned for your order with OrderId:" = "is assigned for your order with OrderId:";
+"is on the way to collect the order with OrderId:" = "is on the way to collect the order with OrderId:";
+"Your order with OrderId:" = "Your order with OrderId:";"has been delivered successfully.";
+"has been delivered successfully." = "has been delivered successfully.";
+"is listed now." = "is listed now.";
+"started following you." = "started following you.";
+"Your order has been placed successfully and your order id is" = "Your order has been placed successfully and your order id is";
+"Status of your order with OrderId:" = "Status of your order with OrderId:";

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceRangeCell" rowHeight="192" id="KGk-i7-Jjw" customClass="PriceRangeCell" customModule="MyLoqta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="159.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdX-OW-oIC" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="10" width="70" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="LE2-KC-PMk"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="wfT-nf-Yw8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Price range"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10KD-100000KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RtC-cu-RFz">
+                        <rect key="frame" x="16" y="30" width="126" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ATg-hI-k5X"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="126" id="uvI-Pb-HP6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="15"/>
+                        <color key="textColor" red="0.14901960780000001" green="0.14901960780000001" blue="0.14901960780000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="Price range"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The average price 323 KD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i28-Tn-yxA" customClass="AVLabel" customModule="MyLoqta" customModuleProvider="target">
+                        <rect key="frame" x="16" y="52" width="288" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="GIR-Mm-u69"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="13"/>
+                        <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="localizeKey" value="The average price 323 KD"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uxx-8K-a3p">
+                        <rect key="frame" x="16" y="93" width="288" height="40"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="7yT-y2-HgC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6Y-0D-0yZ">
+                        <rect key="frame" x="16" y="159" width="288" height="1"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2MF-d5-6jx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i28-Tn-yxA" firstAttribute="top" secondItem="RtC-cu-RFz" secondAttribute="bottom" constant="2" id="3dp-ou-MX3"/>
+                    <constraint firstItem="GdX-OW-oIC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Fp6-0t-Mxo"/>
+                    <constraint firstAttribute="bottom" secondItem="M6Y-0D-0yZ" secondAttribute="bottom" id="G42-Mc-Xe4"/>
+                    <constraint firstItem="M6Y-0D-0yZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="J0t-B2-hjL"/>
+                    <constraint firstAttribute="bottom" secondItem="Uxx-8K-a3p" secondAttribute="bottom" constant="26.5" id="KAe-AF-MX0"/>
+                    <constraint firstItem="RtC-cu-RFz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Vn2-3o-Fnw"/>
+                    <constraint firstItem="i28-Tn-yxA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="aJ1-MM-qSb"/>
+                    <constraint firstAttribute="trailing" secondItem="Uxx-8K-a3p" secondAttribute="trailing" constant="16" id="bl9-Bc-YcT"/>
+                    <constraint firstItem="Uxx-8K-a3p" firstAttribute="top" secondItem="i28-Tn-yxA" secondAttribute="bottom" constant="26" id="ch9-gx-eTw"/>
+                    <constraint firstAttribute="trailing" secondItem="i28-Tn-yxA" secondAttribute="trailing" constant="16" id="co0-GV-cIX"/>
+                    <constraint firstItem="RtC-cu-RFz" firstAttribute="top" secondItem="GdX-OW-oIC" secondAttribute="bottom" constant="4" id="jWG-BF-Ing"/>
+                    <constraint firstItem="Uxx-8K-a3p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="m9t-IU-bBq"/>
+                    <constraint firstAttribute="trailing" secondItem="M6Y-0D-0yZ" secondAttribute="trailing" constant="16" id="zWg-0x-CW2"/>
+                    <constraint firstItem="GdX-OW-oIC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zo9-Wj-euh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAveragePrice" destination="i28-Tn-yxA" id="bru-Yo-IqL"/>
+                <outlet property="lblPriceRange" destination="RtC-cu-RFz" id="M6G-mG-O2H"/>
+                <outlet property="viewRange" destination="Uxx-8K-a3p" id="YgM-eg-tRk"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-20"/>
+        </tableViewCell>
+    </objects>
+</document>
